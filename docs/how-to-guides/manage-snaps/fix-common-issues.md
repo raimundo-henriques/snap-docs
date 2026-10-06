@@ -1,4 +1,11 @@
+---
+myst:
+  html_meta:
+    description: Resolve common snap and snapd issues with network access, daemon connectivity, slow downloads, missing binaries, home directories, and initialisation errors.
+---
+
 (how-to-guides-fix-common-issues-index)=
+
 # Fix common issues
 
 Snaps run on, and are built for, a diverse and constantly evolving set of {ref}`operating systems <tutorials-install-the-daemon-index>` and [embedded devices](https://ubuntu.com/core/docs/supported-platforms#heading--supported).
@@ -17,7 +24,7 @@ See {ref}`Network requirements <reference-administration-network-requirements>` 
 
 To perform most actions, the snap client needs to communicate with the snap daemon. If this isn't possible, the snap command fails and outputs a connection refused error.
 
-There are various causes for this error.  Try the following steps, and if the problem persists, see the next section on generating and sharing debugging details.
+There are various causes for this error. Try the following steps, and if the problem persists, see the next section on generating and sharing debugging details.
 
 1. Restart snapd:
 
@@ -27,15 +34,15 @@ There are various causes for this error.  Try the following steps, and if the pr
 
 1. Reload systemd's daemon state:
 
-    ```
+   ```
    sudo systemctl daemon-reload
-    ```
+   ```
 
 1. Reboot the machine:
-    
-    ```
-    sudo reboot
-    ```
+
+   ```
+   sudo reboot
+   ```
 
 See [cannot communicate with server connection refused ](https://forum.snapcraft.io/t/snap-d-error-cannot-communicate-with-server-connection-refused/6093) for discussions on this issue.
 
@@ -43,13 +50,13 @@ See [cannot communicate with server connection refused ](https://forum.snapcraft
 
 When a snap is installed, it's downloaded and authenticated against one or more servers attached to the [Snap Store](https://snapcraft.io/store) (or a local proxy). If a server is unavailable, or suffering bandwidth issues, installation progress will be slow.
 
-You can check on the operational status of the servers attached to the Snap Store from the Snap Store status page: [https://status.snapcraft.io/](https://status.snapcraft.io/). 
+You can check on the operational status of the servers attached to the Snap Store from the Snap Store status page: [https://status.snapcraft.io/](https://status.snapcraft.io/).
 
-![Snap Store status](https://assets.ubuntu.com/v1/dd75734c-image+%282%29.png) 
+![Snap Store status](https://assets.ubuntu.com/v1/dd75734c-image+%282%29.png)
 
 The Snap Store Status page also includes a status history for the servers over the last week and an incident history.
 
-![Snap Store incident report](https://assets.ubuntu.com/v1/5af8a398-image.png) 
+![Snap Store incident report](https://assets.ubuntu.com/v1/5af8a398-image.png)
 
 See [Extremely slow snap downloads](https://forum.snapcraft.io/t/extremely-slow-snap-downloads/4668/38) for further discussions on snap download speeds.
 
@@ -59,7 +66,7 @@ When the snap daemon is installed, its executable components are added to the sy
 
 The first thing to do is check installation instructions for the specific operating system. See {ref}`Installing snapd <tutorials-install-the-daemon-index>` for further details.
 
-Linux distributions differ, but most will need a restart after snapd has been installed to refresh paths and system security profiles. 
+Linux distributions differ, but most will need a restart after snapd has been installed to refresh paths and system security profiles.
 
 Executables from installed snaps can usually be found in `/snap/bin/`, and this should also be in your path. You can check this by typing `echo $PATH | grep "snap/bin"` on the command line, or by using the _which_ command to see where the executable binary:
 
@@ -80,7 +87,7 @@ You will need to restart your shell for the changes to take effect.
 
 ## Home directories outside of /home
 
-The snap daemon (snapd) requires a user’s home directory ($HOME) to be located under  `/home`  on the local filesystem. This requirement cannot currently be changed. However, it is possible to  *bind mount*  an alternative $HOME location to  `/home`  to allow other locations to be found by snapd. This process is outlined below.
+The snap daemon (snapd) requires a user’s home directory ($HOME) to be located under `/home` on the local filesystem. This requirement cannot currently be changed. However, it is possible to _bind mount_ an alternative $HOME location to `/home` to allow other locations to be found by snapd. This process is outlined below.
 
 See {ref}`Home directories outside of ‘/home’ <interfaces-home-outside-home>` for further details.
 
@@ -103,6 +110,7 @@ As a temporary solution, the issues can be bypassed with the following command:
 ```
 sudo sysctl kernel.unprivileged_userns_clone=1
 ```
+
 ## Too early for operation errors
 
 After installing the snap daemon, _snapd_, it can take a short amount of time to initialise its environment.
@@ -126,7 +134,7 @@ ID    Status  Spawn                   Ready                   Summary
 2053  Done    today at 15:16 BST      today at 15:17 BST      Refresh snaps "gnome-calculator", "flock-chat", "gnome-characters", "gnome-system-monitor"
 ```
 
-The snap daemon documents its operations to the system log. This can be retrieved and viewed with the following command: 
+The snap daemon documents its operations to the system log. This can be retrieved and viewed with the following command:
 
 ```
 sudo journalctl --no-pager -u snapd
@@ -141,4 +149,3 @@ ID    Status  Spawn                   Ready                   Label             
 ```
 
 Don't forget to include the output from `sudo snap version` if you wish to share your output to get further help on the forum.
-

@@ -1,7 +1,14 @@
+---
+myst:
+  html_meta:
+    description: Create, inspect, verify, export, import, restore, and delete snap data snapshots, with automatic retention and file exclusions.
+---
+
 (how-to-guides-manage-snaps-create-data-snapshots)=
+
 # Create data snapshots
 
-A *snapshot* is a copy of the user, system and configuration data stored by *snapd* for one or more snaps on your system. This data can be found in `$HOME/snap/<snap-name>` and `/var/snap/<snap-name>`.
+A _snapshot_ is a copy of the user, system and configuration data stored by _snapd_ for one or more snaps on your system. This data can be found in `$HOME/snap/<snap-name>` and `/var/snap/<snap-name>`.
 
 Snapshots are generated **manually** with the `snap save` command and **automatically when a snap is removed** (unless `--purge` is used with remove, in which case no snapshot is created). A snapshot can be used to backup the state of your snaps, revert snaps to a previous state and to restore a fresh snapd installation to a previously saved state.
 
@@ -22,9 +29,9 @@ Set  Snap         Age    Version               Rev   Size   Notes
 Before using this command, stop any services for the snaps included in the snapshot (`snap stop <snap-name>`) and close any running applications provided by those snaps. Start them again once the snapshot has been saved.
 ```
 
-Each snapshot has a unique ID, or revision, shown in the *Set* column above. This value is unique to each *save* operation, regardless of the number of snaps it includes. *Age* is the period of time since the snapshot was created, while *Version* and *Rev* refer to the specific snap at the time of the snapshot. *Size* is the amount of storage used by a snapshot. 
+Each snapshot has a unique ID, or revision, shown in the _Set_ column above. This value is unique to each _save_ operation, regardless of the number of snaps it includes. _Age_ is the period of time since the snapshot was created, while _Version_ and _Rev_ refer to the specific snap at the time of the snapshot. _Size_ is the amount of storage used by a snapshot.
 
-If you'd rather not wait for the *save* operation to complete before regaining access to your terminal, add the `--no-wait` argument.
+If you'd rather not wait for the _save_ operation to complete before regaining access to your terminal, add the `--no-wait` argument.
 
 You can see the state of your system's snapshots with the `snap saved` command. Adding `--id=<set/unique ID>` allows you to query a specific snapshot:
 
@@ -37,38 +44,43 @@ Set  Snap             Age    Version               Rev   Size   Notes
 Both the _saved_ and _check-snapshot_ commands accept a `–users=` option with a comma-separated list of users to filter on.
 
 (ref-create-data-snapshots_what-a-snapshot-stores)=
+
 ## What a snapshot stores
 
-A snapshot is a copy of the user, system and configuration data stored by *snapd* for one or more snaps on your system. For each snap, this data can be found in `$HOME/snap/<snap-name>` and `/var/snap/<snap-name>`.
+A snapshot is a copy of the user, system and configuration data stored by _snapd_ for one or more snaps on your system. For each snap, this data can be found in `$HOME/snap/<snap-name>` and `/var/snap/<snap-name>`.
 
 More specifically, these are locations that snapped application access through the following environment variables from within the snap:
 
 System-wide locations:
+
 - **SNAP_COMMON** ( `/var/snap/<snap-name>/common `)
 - **SNAP_DATA** (`/var/snap/<snap-name>/<revision>`)
 
 User-specific locations:
+
 - **SNAP_USER_COMMON** (`/home/<username>/snap/<snap-name>/common`)
 - **SNAP_USER_DATA** (`/home/<username>/snap/<snap-name>/<revision>`)
 
 [snapd _2.77_+] Data residing in mount points under the snap data directories listed above is excluded from all snapshots, whether created manually with `snap save` or automatically when a snap is removed.
 
-It's important to note that **SNAP_DATA** and **SNAP_USER_DATA** place their data within a directory specific to each snap {ref}`revision <explanation-how-snaps-work-revisions>`, whereas  **SNAP_COMMON** and  **SNAP_USER_COMMON** do not.
+It's important to note that **SNAP_DATA** and **SNAP_USER_DATA** place their data within a directory specific to each snap {ref}`revision <explanation-how-snaps-work-revisions>`, whereas **SNAP_COMMON** and **SNAP_USER_COMMON** do not.
 
 You need to be aware of what data is copied forward when you move from one revision to the next and which data will be restored if you switch to a previous snapshot.
 
-When you move from one revision to the next, the revision-specific contents of  **SNAP_DATA** and  **SNAP_USER_DATA** are copied into new directories for the new revision. The contents of  **SNAP_COMMON** and  **SNAP_USER_COMMON** remain the same. A snapshot **only** includes the data for the installed revision, plus the contents of the two **COMMON** directories.
+When you move from one revision to the next, the revision-specific contents of **SNAP_DATA** and **SNAP_USER_DATA** are copied into new directories for the new revision. The contents of **SNAP_COMMON** and **SNAP_USER_COMMON** remain the same. A snapshot **only** includes the data for the installed revision, plus the contents of the two **COMMON** directories.
 
 When a snapshot is restored:
-1. The contents of   **SNAP_COMMON** and  **SNAP_USER_COMMON** will be _overwritten_ and restored to their state when the restored snapshot was created.
 
-1. The revision-specific contents of **SNAP_DATA** and  **SNAP_USER_DATA** will be copied into and _overwrite_ the contents of the revision-specific directory of the currently installed revision.
+1. The contents of **SNAP_COMMON** and **SNAP_USER_COMMON** will be _overwritten_ and restored to their state when the restored snapshot was created.
+
+1. The revision-specific contents of **SNAP_DATA** and **SNAP_USER_DATA** will be copied into and _overwrite_ the contents of the revision-specific directory of the currently installed revision.
 
 See {ref}`Data locations <interfaces-data-locations>` for more details on how these locations are intended to be used by a snap, and see {ref}`Inside a snapshot <ref-create-data-snapshots_inside-a-snapshot>` to see how they're stored within a snapshot.
 
 ### Excluding data
 
 #### Static exclusion via meta/snapshots.yaml
+
 A snap can use the [`meta/snapshots.yaml`](https://documentation.ubuntu.com/snapcraft/latest/reference/snapshots/) file to exclude data from snapshots. This config file contains a single `exclude` keyword which lists one or more wildcard patterns of files or directories to exclude from snapshots. The wildcard patterns must start with the **SNAP_DATA**, **SNAP_COMMON**, **SNAP_USER_DATA**, or **SNAP_USER_COMMON** variable and cannot include `[`, `]`, `{`, `}`, `?`, or `**`.
 
 Since the exclusions are defined in the snap package, they do not change between snapshots and are fixed for a given revision. These static exclusions apply to both manual and automatic snapshots.
@@ -83,16 +95,17 @@ exclude:
 ```
 
 #### Dynamic exclusion via snapd REST API
+
 A snapshot can also be created using a POST request to the [`/v2/snaps`](https://snapcraft.io/docs/reference/development/snapd-rest-api/#/Asynchronous/manageSnaps) REST API endpoint. The request body includes a `snapshot-options` field that can be used to list snap-specific paths of files or directories to exclude from the snapshot. These paths follow the same patterns as mentioned above for the `meta/snapshots.yaml` file. The exclusion path patterns are specified per request and can vary across snapshots. This dynamic path exclusion is only available for manual snapshots.
 
 ```json
 {
-    "action": "snapshot",
-    "snaps": ["<snap1>", "<snap2>"],
-    "snapshot-options": {
-        "<snap1>": {"exclude": ["<pattern1>", "<pattern2>"]},
-        "<snap2>": {"exclude": ["<pattern3>"]}
-    }
+  "action": "snapshot",
+  "snaps": ["<snap1>", "<snap2>"],
+  "snapshot-options": {
+    "<snap1>": { "exclude": ["<pattern1>", "<pattern2>"] },
+    "<snap2>": { "exclude": ["<pattern3>"] }
+  }
 }
 ```
 
@@ -146,7 +159,7 @@ By default, this command restores all the data for all the snaps in a snapshot. 
 
 [snapd _2.77_+] Existing {ref}`mount-control <interfaces-mount-control-interface>` mount points under snap data directories are preserved when a snapshot is restored and are not overwritten.
 
-Excluding a snap's system and configuration data from *snap restore* is not currently possible.
+Excluding a snap's system and configuration data from _snap restore_ is not currently possible.
 
 ## Deleting a snapshot
 
@@ -162,11 +175,12 @@ No snapshots found.
 By default, this command deletes all the data for all the snaps in a snapshot. You can delete the data for specific snaps by listing them after the command.
 
 (ref-create-data-snapshots_automatic-snapshots)=
+
 ## Automatic snapshots
 
 Apart from on [Ubuntu Core](https://www.ubuntu.com/core) devices, where the feature is disabled by default, a snapshot is generated automatically when a snap is removed. These snapshots are retained for 31 days before being deleted automatically.
 
-To see which snapshots are generated automatically,  look for `auto` in the *Notes* column output from *snap saved*:
+To see which snapshots are generated automatically, look for `auto` in the _Notes_ column output from _snap saved_:
 
 ```
 $ snap saved
@@ -190,32 +204,32 @@ To disable automatic snapshots, set the retention time to `no`:
 snap set system snapshots.automatic.retention=no
 ```
 
-> Disabling automatic snapshots will *not* affect pre-existing automatically generated snapshots, only those generated by the removal of subsequent snaps.
+> Disabling automatic snapshots will _not_ affect pre-existing automatically generated snapshots, only those generated by the removal of subsequent snaps.
 
-Automatic snapshots require snap version _2.39+_. 
+Automatic snapshots require snap version _2.39+_.
 
 (ref-create-data-snapshots_inside-a-snapshot)=
+
 ## Inside a snapshot
 
-On Ubuntu-based systems, snapshots are stored in the `/var/lib/snapd/snapshots` directory and are both stored and exported as a *zip* file. This zip file contains the following:
+On Ubuntu-based systems, snapshots are stored in the `/var/lib/snapd/snapshots` directory and are both stored and exported as a _zip_ file. This zip file contains the following:
 
 ```yaml
 <snap-snapshot-zip>
 ├── <snapshot-number>_<snap-name>_<revision>.zip
 └────── archive.tgz
-    │   ├── <revision-number>
-    │       └── $SNAP_DATA (/var/snap/<snap-name>-<revision>)
-    │   └── common
-    │       └── $SNAP_COMMON (/var/snap/<snap-name>/common)
-    ├── meta.json
-    ├── meta.sha3_384
-    └── user
-        └── <username>.tgz
-            ├── <revision-number>
-            │   └── $SNAP_USER_DATA (/home/<username>/snap/<snap-name>/<revision>)
-            └── common
-                └── $SNAP_USER_COMMON(/home/<username>/<snap-name>)
-
+│   ├── <revision-number>
+│       └── $SNAP_DATA (/var/snap/<snap-name>-<revision>)
+│   └── common
+│       └── $SNAP_COMMON (/var/snap/<snap-name>/common)
+├── meta.json
+├── meta.sha3_384
+└── user
+└── <username>.tgz
+├── <revision-number>
+│   └── $SNAP_USER_DATA (/home/<username>/snap/<snap-name>/<revision>)
+└── common
+└── $SNAP_USER_COMMON(/home/<username>/<snap-name>)
 ```
 
 - **meta.json**: describes the contents of the snapshot, alongside its configuration and checksums for the archives.

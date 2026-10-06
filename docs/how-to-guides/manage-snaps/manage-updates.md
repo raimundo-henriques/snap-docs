@@ -1,11 +1,18 @@
+---
+myst:
+  html_meta:
+    description: Schedule automatic snap refreshes, pause or resume updates, manage metered connections, run manual updates, and revert snaps to earlier revisions.
+---
+
 (how-to-guides-work-with-snaps-manage-updates)=
+
 # Manage updates
 
-Snaps update automatically, and by default, the *snapd* daemon checks for updates 4 times a day. Each update check is called a **refresh**.
+Snaps update automatically, and by default, the _snapd_ daemon checks for updates 4 times a day. Each update check is called a **refresh**.
 
 Updates can be set to occur on Friday at midnight, or for specific days of the month, such as only the third Monday, or even the last Friday of the month, between 23:00 to 01:00 the next day. They can even be postponed indefinitely, or for a set period of time.
 
-When, if, and how often, these updates occur can is the job of the *snap refresh* command. 
+When, if, and how often, these updates occur can is the job of the _snap refresh_ command.
 
 ```{caution}
 Snaps running in {ref}`_devmode_ <explanation-security-snap-confinement>`, or installed locally, are typically intended for testing and do not update automatically until they've been published and downloaded from the store.
@@ -13,7 +20,7 @@ Snaps running in {ref}`_devmode_ <explanation-security-snap-confinement>`, or in
 
 ## Refresh update control
 
-There are two general approaches to postponing or otherwise managing snap updates, with  either the `snap refresh --hold` command, or with system settings:
+There are two general approaches to postponing or otherwise managing snap updates, with either the `snap refresh --hold` command, or with system settings:
 
 - Pause or stop updates with refresh hold
 - Control updates with system options
@@ -28,7 +35,7 @@ The `snap refresh --hold` command holds, or postpones, snap updates for individu
 snap refresh --hold=<duration> <snap1> <snap2>...
 ```
 
-Time duration units can be seconds (s), minutes (m) or hours (h), or a combination of these.  To postpone updates indefinitely, a value of `forever` is also valid.
+Time duration units can be seconds (s), minutes (m) or hours (h), or a combination of these. To postpone updates indefinitely, a value of `forever` is also valid.
 
 ```
 $ snap refresh --hold=24h firefox
@@ -36,7 +43,6 @@ General refreshes of "firefox" held until 2022-10-26T14:10:53+01:00
 ```
 
 If no duration is specified, the time duration defaults to `forever`.
-
 
 If no snaps are specified, the hold applies to all snaps installed on the system:
 
@@ -49,10 +55,10 @@ To see which snaps are being held, look for `held` in the _notes_ column when ru
 
 ```
 $ snap list
-Name         Version  Rev   Tracking       Publisher          Notes                         
-alacritty    0.8.0    46    latest/stable  snapcrafters       classic   
-vlc          3.0.18   3078  latest/stable  videolan✓          -                              
-yt-dlp       18       212   latest/edge    morrisong          held      
+Name         Version  Rev   Tracking       Publisher          Notes
+alacritty    0.8.0    46    latest/stable  snapcrafters       classic
+vlc          3.0.18   3078  latest/stable  videolan✓          -
+yt-dlp       18       212   latest/edge    morrisong          held
 ```
 
 However, there are important differences in how a hold is applied, depending on whether individual snaps are specified or not. These differences are described below.
@@ -60,8 +66,9 @@ However, there are important differences in how a hold is applied, depending on 
 ### If snaps are specified
 
 The refresh hold is:
-* **Effective on auto-refreshes and general snap refresh requests**
-* **Not effective on targeted snap refreshes**
+
+- **Effective on auto-refreshes and general snap refresh requests**
+- **Not effective on targeted snap refreshes**
 
 When one or more snaps are specified, the hold is effective only on their auto-refreshes and general refresh requests from `snap refresh`.
 
@@ -72,12 +79,14 @@ This can be useful if a snap upgrade is known to be problematic. That specific s
 ### If no snaps are specified
 
 The refresh hold is:
-* **Effective only on auto-refreshes**
-* **Not effective on general snap refresh requests and targeted snap refreshes**
+
+- **Effective only on auto-refreshes**
+- **Not effective on general snap refresh requests and targeted snap refreshes**
 
 If no snaps are specified, a hold applies to all snaps installed on the system, however the hold is only effective on auto-refreshes and will not block either general refresh requests from 'snap refresh', or specific snap requests from 'snap refresh target-snap'.
 
 (ref-manage-updates_remove-a-hold)=
+
 ### Remove a hold
 
 The `snap refresh --unhold` command removes a refresh hold, either for the specified snaps or for all snaps when no snaps are targeted specifically.
@@ -107,27 +116,27 @@ The refresh rate is freely configurable, and can be set to any duration above a 
 
 ### refresh.timer
 
-Use *refresh.timer* to modify when, and how frequently, your snaps are refreshed.
+Use _refresh.timer_ to modify when, and how frequently, your snaps are refreshed.
 
-The following example asks the system to only refresh snaps between  4.00am and 7.00am, and 7.00pm and 10:10pm:
+The following example asks the system to only refresh snaps between 4.00am and 7.00am, and 7.00pm and 10:10pm:
 
 ```
-sudo snap set system refresh.timer=4:00-7:00,19:00-22:10 
+sudo snap set system refresh.timer=4:00-7:00,19:00-22:10
 ```
 
 Other examples for the time and frequency option include:
 
-| Options | Result |
-|---|---|
-| `mon,10:00,,fri,15:00` | Mondays at 10:00, Fridays at 15:00 |
-| `mon,fri,10:00,15:00` | Mondays at 10:00 and 15:00, Fridays at 10:00 and 15:00 |
-| `mon-wed,fri,9:00-11:00/2` | Monday to Wednesday and on Friday, twice between 9:00 and 11:10 |
+| Options                           | Result                                                                                          |
+| --------------------------------- | ----------------------------------------------------------------------------------------------- |
+| `mon,10:00,,fri,15:00`            | Mondays at 10:00, Fridays at 15:00                                                              |
+| `mon,fri,10:00,15:00`             | Mondays at 10:00 and 15:00, Fridays at 10:00 and 15:00                                          |
+| `mon-wed,fri,9:00-11:00/2`        | Monday to Wednesday and on Friday, twice between 9:00 and 11:10                                 |
 | `mon,9:00~11:00,,wed,22:00~23:00` | Mondays, some time between 9:00 and 11:00, and on Wednesdays, some time between 22:00 and 23:00 |
-| `mon,wed` | Monday and on Wednesday, at 0:00 |
-| `mon2-wed,23:00-24:00` | 2nd Monday of the month, through the following Wednesday, between 23:00 and 24:00 |
-| `fri5,23:00-01:00` | Last Friday of the month, from 23:00 to 1:00 the next day |
+| `mon,wed`                         | Monday and on Wednesday, at 0:00                                                                |
+| `mon2-wed,23:00-24:00`            | 2nd Monday of the month, through the following Wednesday, between 23:00 and 24:00               |
+| `fri5,23:00-01:00`                | Last Friday of the month, from 23:00 to 1:00 the next day                                       |
 
-See {ref}`Timer string format <interfaces-timer-string-format>` for a comprehensive breakdown of the syntax used to define times and frequencies. 
+See {ref}`Timer string format <interfaces-timer-string-format>` for a comprehensive breakdown of the syntax used to define times and frequencies.
 
 You can check the update frequency for your environment with the `refresh` command:
 
@@ -142,14 +151,15 @@ By default, the snap system is scheduled to refresh four times per day, as shown
 
 ### refresh.hold
 
-Use *refresh.hold* to delay snap refreshes until a defined time and date (up to 90 days). The time and date format needs to conform to [RFC 3339](https://tools.ietf.org/html/rfc3339). 
+Use _refresh.hold_ to delay snap refreshes until a defined time and date (up to 90 days). The time and date format needs to conform to [RFC 3339](https://tools.ietf.org/html/rfc3339).
 
-For example, *5:22pm (BST), Tuesday 23rd April 2019*, would look like the following: 
+For example, _5:22pm (BST), Tuesday 23rd April 2019_, would look like the following:
 
 ```
 2019-04-23T17:22:54+01:00
 ```
-The correct format can be generated with the *date* command:
+
+The correct format can be generated with the _date_ command:
 
 ```
 $ date --date="BST 2023-09-23 17:22:54" +%Y-%m-%dT%H:%M:%S%:z
@@ -160,11 +170,11 @@ $ sudo snap get system refresh.hold
 2019-04-24T17:22:54+01:00
 ```
 
-After a refresh, the next refresh can be delayed by up to 90 days, after which a refresh will be performed regardless of the *refresh.hold* value.
+After a refresh, the next refresh can be delayed by up to 90 days, after which a refresh will be performed regardless of the _refresh.hold_ value.
 
 ### refresh.metered
 
-Use *refresh.metered* to pause and re-enable the refresh process when  *NetworkManager* detects a metered connection, such as an LTE link with a limited data plan. 
+Use _refresh.metered_ to pause and re-enable the refresh process when _NetworkManager_ detects a metered connection, such as an LTE link with a limited data plan.
 
 To hold refreshing snaps when on a metered connection:
 
@@ -178,25 +188,26 @@ To allow refreshing:
 sudo snap set system refresh.metered=null
 ```
 
-By default, *refresh.metered* is enabled when a metered connection is detected.
+By default, _refresh.metered_ is enabled when a metered connection is detected.
 
 [quote]
-ⓘ  refresh.metered is available in snap 2.33 and later.
+ⓘ refresh.metered is available in snap 2.33 and later.
 [/quote]
 
 <a name="retain"></a>
 
 ### refresh.retain
 
-Use *refresh.retain* to set the maximum number of a snap's revisions stored by the system *after* the next refresh:
+Use _refresh.retain_ to set the maximum number of a snap's revisions stored by the system _after_ the next refresh:
 
 ```
 sudo snap set system refresh.retain=3
 ```
-The *refresh.retain* value can be a number between 2 and 20. The default is `refresh.retain=3` on Ubuntu Core systems and `refresh.retain=2` on *classic* Ubuntu systems, such as those running an Ubuntu LTS release.
+
+The _refresh.retain_ value can be a number between 2 and 20. The default is `refresh.retain=3` on Ubuntu Core systems and `refresh.retain=2` on _classic_ Ubuntu systems, such as those running an Ubuntu LTS release.
 
 [quote]
-ⓘ  refresh.retain is available in snap 2.34 and later.
+ⓘ refresh.retain is available in snap 2.34 and later.
 [/quote]
 
 ## Manual updates
@@ -208,7 +219,8 @@ $ snap refresh
 gnome-system-monitor 3.28.2 from 'canonical' refreshed
 gnome-calculator 3.28.2 from 'canonical' refreshed
 ```
-The *refresh* command can also be used to see when the last refresh occurred and when the next is scheduled:
+
+The _refresh_ command can also be used to see when the last refresh occurred and when the next is scheduled:
 
 ```
 $ snap refresh --time
@@ -217,7 +229,7 @@ last: today at 09:16 GMT
 next: today at 17:39 GMT
 ```
 
-The first line in the above output shows the value of the *timer* system option. This defines how and when a refresh should be scheduled.
+The first line in the above output shows the value of the _timer_ system option. This defines how and when a refresh should be scheduled.
 
 To see which snaps are going to be updated with the next _refresh_, use the additional `--list` argument:
 
@@ -277,11 +289,11 @@ snap revert vlc --revision 500
 
 This operation will revert both the snap revision and the configuration data associated with the software. If the previously used revision of the snap is from a different channel, that snap will be installed but the channel being tracked won’t change.
 
-User data, such as data generated by the snap and stored in a database, is often stored in a *common* directory and will not be reverted. See {ref}`Data locations <interfaces-data-locations>` for more details on what information is stored and where.
+User data, such as data generated by the snap and stored in a database, is often stored in a _common_ directory and will not be reverted. See {ref}`Data locations <interfaces-data-locations>` for more details on what information is stored and where.
 
-A snap won’t automatically update to a version previously reverted from, and the output from `snap refresh` will continue to state *All snaps up to date*. A reverted snap will be automatically updated when a new and different revision is made available by the publisher.
+A snap won’t automatically update to a version previously reverted from, and the output from `snap refresh` will continue to state _All snaps up to date_. A reverted snap will be automatically updated when a new and different revision is made available by the publisher.
 
-However, explicitly adding the snap name to `snap refresh` *will* update the snap, regardless of whether the latest revision was previously reverted from or not:
+However, explicitly adding the snap name to `snap refresh` _will_ update the snap, regardless of whether the latest revision was previously reverted from or not:
 
 ```
 $ snap list --all vlc
@@ -294,8 +306,7 @@ $ sudo snap refresh vlc
 vlc 3.0.6 from VideoLAN✓ refreshed
 ```
 
-A previously used snap that was reverted from will display *disabled* in the Notes column of the output.
+A previously used snap that was reverted from will display _disabled_ in the Notes column of the output.
 
-> **Reverting to a previous version of *snapd*** </br>
-The snapd snap manages the snap packaging system, and is therefore a special case if you wish to revert it, or downgrade the currently running version. It must be reverted on its own, and there cannot be any pending changes for other snaps in the pipeline.
-
+> **Reverting to a previous version of _snapd_** </br>
+> The snapd snap manages the snap packaging system, and is therefore a special case if you wish to revert it, or downgrade the currently running version. It must be reverted on its own, and there cannot be any pending changes for other snaps in the pipeline.
