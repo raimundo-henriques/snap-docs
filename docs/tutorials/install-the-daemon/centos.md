@@ -1,4 +1,11 @@
+---
+myst:
+  html_meta:
+    description: Learn how to install snap on CentOS 7, 8, or 9 Stream using EPEL, resolve missing dependencies, and enable the socket and classic support.
+---
+
 (interfaces-installing-snap-on-centos)=
+
 # Install snap on CentOS
 
 Snap is available for [CentOS 9 Stream](https://www.centos.org/), CentOS 8 Stream, CentOS 8 and CentOS 7, from the 7.6 release onwards. It's also available for Red Hat Enterprise Linux (RHEL) 7.6+ (see {ref}`Installing snap on Red Hat Enterprise Linux <interfaces-installing-snap-on-red-hat>`).
@@ -39,25 +46,25 @@ Problem: package snapd-2.42.1-1.el8.x86_64 requires snapd-selinux = 2.42.1-1.el8
 but none of the providers can be installed.
 ```
 
-In such an event, rather than waiting for EPEL packages to be updated, you can enable the [continuous release (CR)](https://wiki.centos.org/AdditionalResources(2f)Repositories(2f)CR.html) repository. This repository contains packages destined for the next point release of CentOS and should satisfy any missing version mismatch dependencies.
+In such an event, rather than waiting for EPEL packages to be updated, you can enable the [continuous release (CR)](<https://wiki.centos.org/AdditionalResources(2f)Repositories(2f)CR.html>) repository. This repository contains packages destined for the next point release of CentOS and should satisfy any missing version mismatch dependencies.
 
-If you're interested in understanding how these packages are built, see  {ref}`Building a snap RPM for Red Hat Enterprise Linux <interfaces-building-snap-rpms-on-rhel>`.
+If you're interested in understanding how these packages are built, see {ref}`Building a snap RPM for Red Hat Enterprise Linux <interfaces-building-snap-rpms-on-rhel>`.
 
 ## Installing snapd
 
-With the EPEL repository added to your CentOS installation, simply install the *snapd* package:
+With the EPEL repository added to your CentOS installation, simply install the _snapd_ package:
 
 ```
 sudo yum install snapd
 ```
 
-Once installed, the *systemd* unit that manages the main snap communication socket needs to be enabled:
+Once installed, the _systemd_ unit that manages the main snap communication socket needs to be enabled:
 
 ```
 sudo systemctl enable --now snapd.socket
 ```
 
-To enable *classic* snap support, enter the following to create a symbolic link between `/var/lib/snapd/snap` and `/snap`:
+To enable _classic_ snap support, enter the following to create a symbolic link between `/var/lib/snapd/snap` and `/snap`:
 
 ```
 sudo ln -s /var/lib/snapd/snap /snap

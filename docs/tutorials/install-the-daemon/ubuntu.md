@@ -1,4 +1,11 @@
+---
+myst:
+  html_meta:
+    description: Learn how to identify your Ubuntu version and install snap on versions or flavours where it is not included by default, then test it with hello-world.
+---
+
 (tutorials-install-the-daemon-ubuntu)=
+
 # Install snap on Ubuntu
 
 Snap is pre-installed and ready to go on all recent releases of Ubuntu.
@@ -7,9 +14,9 @@ This means, if you're running [Ubuntu 16.04 LTS (Xenial Xerus)](https://www.ubun
 
 If you need to know which version of Ubuntu you're running, open **Settings** and select the **About** page. Alternatively, from the command line, type `lsb_release -a`.
 
-For versions and flavours of Ubuntu that don't include *snap* by default, *snap* can be installed from the Ubuntu Software Centre by searching for `snapd`.
+For versions and flavours of Ubuntu that don't include _snap_ by default, _snap_ can be installed from the Ubuntu Software Centre by searching for `snapd`.
 
-Alternatively, *snapd* can be installed from the command line:
+Alternatively, _snapd_ can be installed from the command line:
 
 ```
 sudo apt update

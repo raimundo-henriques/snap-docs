@@ -1,7 +1,14 @@
+---
+myst:
+  html_meta:
+    description: Learn how to install snap from the Arch User Repository, enable its socket, enable AppArmor, enable classic support, and test with hello-world.
+---
+
 (tutorials-install-the-daemon-arch-linux)=
+
 # Install snap on Arch Linux
 
-On Arch Linux, *snap* can be installed from the [Arch User Repository (AUR)](https://aur.archlinux.org/packages/snapd/).
+On Arch Linux, _snap_ can be installed from the [Arch User Repository (AUR)](https://aur.archlinux.org/packages/snapd/).
 
 The [manual build process](https://wiki.archlinux.org/index.php/Arch_User_Repository#Installing_packages) is the Arch-supported install method for AUR packages, and you'll need the [prerequisites](https://wiki.archlinux.org/index.php/Arch_User_Repository#Prerequisites) installed before you can install any AUR package. You can then install snap with the following:
 
@@ -11,7 +18,7 @@ cd snapd
 makepkg -si
 ```
 
-Once installed, the *systemd* unit that manages the main snap communication socket needs to be enabled:
+Once installed, the _systemd_ unit that manages the main snap communication socket needs to be enabled:
 
 ```
 sudo systemctl enable --now snapd.socket
@@ -28,7 +35,7 @@ sudo systemctl enable --now snapd.apparmor.service
 To test whether confinement is running correctly, install the [hello-world](https://snapcraft.io/hello-world) snap and run `hello-world.evil`. If confinement is working, you will see a permission denied error:
 
 ```
-$ hello-world.evil 
+$ hello-world.evil
 Hello Evil World!
 This example demonstrates the app confinement
 You should see a permission denied error next
@@ -37,7 +44,7 @@ You should see a permission denied error next
 
 ## Classic support
 
-To enable *classic* snap support, enter the following to create a symbolic link between `/var/lib/snapd/snap` and `/snap`:
+To enable _classic_ snap support, enter the following to create a symbolic link between `/var/lib/snapd/snap` and `/snap`:
 
 ```
 sudo ln -s /var/lib/snapd/snap /snap

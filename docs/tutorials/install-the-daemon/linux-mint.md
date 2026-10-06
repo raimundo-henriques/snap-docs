@@ -1,9 +1,16 @@
+---
+myst:
+  html_meta:
+    description: Learn how to install snap on Linux Mint by disabling the nosnap preference, installing it through Software Manager or APT, and testing it with hello-world.
+---
+
 (tutorials-install-the-daemon-linux-mint)=
+
 # Install snap on Linux Mint
 
 Snap is available for the latest release of Linux Mint, 22.1 (Xia), and for older releases from Linux Mint 18.2 (Sonya) onwards.
 
-You can find out which version of Linux Mint you're running by opening *System info* from the *Preferences* menu.
+You can find out which version of Linux Mint you're running by opening _System info_ from the _Preferences_ menu.
 
 From Linux Mint 20 onwards, installing Snap is blocked by a file called `nosnap.pref` in the directory `/etc/apt/preferences.d/`; this file needs to be either moved or removed from the directory, or renamed with an extension other than `.pref` before Snap can be installed.
 
@@ -19,9 +26,9 @@ With the file renamed, the package database needs to be updated next:
 sudo apt update
 ```
 
-To now install snap from the Software Manager application, search for *snapd* and click **Install**.
+To now install snap from the Software Manager application, search for _snapd_ and click **Install**.
 
-Alternatively, *snapd* can be installed from the command line:
+Alternatively, _snapd_ can be installed from the command line:
 
 ```
 sudo apt install snapd
@@ -38,4 +45,4 @@ $ hello-world
 Hello World!
 ```
 
-Snap is now installed and ready to go! 
+Snap is now installed and ready to go!

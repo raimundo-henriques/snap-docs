@@ -1,16 +1,25 @@
+---
+myst:
+  html_meta:
+    description: Learn how to install snap on a Kali Linux system installation, enable snapd and AppArmor services, and test it with hello-world.
+---
+
 (interfaces-installing-snap-on-kali)=
+
 # Install snap on Kali Linux
 
 ```{important}
 Installing snap from a _live_ Kali Linux environment is not currently supported. These instructions only work when Kali Linux is installed.
 ```
+
 From a Kali Linux installation, snap can be installed directly from the command line:
 
 ```
 sudo apt update
 sudo apt install snapd
 ```
-If the *sudo* command isn't installed (usually because a root password was provided at install time), you can install *snap* by first switching to the *root* account:
+
+If the _sudo_ command isn't installed (usually because a root password was provided at install time), you can install _snap_ by first switching to the _root_ account:
 
 ```
 su root

@@ -1,7 +1,14 @@
+---
+myst:
+  html_meta:
+    description: Learn how to install snap on elementary OS from Terminal with APT, refresh login paths after installation, and verify it with hello-world.
+---
+
 (tutorials-install-the-daemon-elementary-os)=
+
 # Install snap on Elementary OS
 
-Snap can be installed on elementary OS from the command line. Open *Terminal* from the Applications launcher and type the following:
+Snap can be installed on elementary OS from the command line. Open _Terminal_ from the Applications launcher and type the following:
 
 ```
 sudo apt update

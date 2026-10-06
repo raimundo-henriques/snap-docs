@@ -1,5 +1,12 @@
+---
+myst:
+  html_meta:
+    description: Learn how to install snap on Red Hat Enterprise Linux with EPEL, enable the socket and classic support, and refresh system paths.
+---
+
 (interfaces-installing-snap-on-red-hat)=
-# Install snap on Red Hat 
+
+# Install snap on Red Hat
 
 Snap is available for [Red Hat Enterprise Linux (RHEL) 9.x](https://developers.redhat.com/products/rhel/overview), RHEL 8 and RHEL 7, from the 7.6 release onwards. It's also available for CentOS 7.6+ (see {ref}`Installing snap on CentOS <interfaces-installing-snap-on-centos>`).
 
@@ -29,19 +36,19 @@ sudo dnf upgrade
 
 ## Installing snapd
 
-With the EPEL repository added to your RHEL installation, the next step is to install the *snapd* package:
+With the EPEL repository added to your RHEL installation, the next step is to install the _snapd_ package:
 
 ```
 sudo yum install snapd
 ```
 
-Once installed, the *systemd* unit that manages the main snap communication socket needs to be enabled:
+Once installed, the _systemd_ unit that manages the main snap communication socket needs to be enabled:
 
 ```
 sudo systemctl enable --now snapd.socket
 ```
 
-To enable *classic* snap support, enter the following to create a symbolic link between `/var/lib/snapd/snap` and `/snap`:
+To enable _classic_ snap support, enter the following to create a symbolic link between `/var/lib/snapd/snap` and `/snap`:
 
 ```
 sudo ln -s /var/lib/snapd/snap /snap
@@ -50,4 +57,3 @@ sudo ln -s /var/lib/snapd/snap /snap
 **Either log out and back in again or restart your system** to ensure snap’s paths are updated correctly.
 
 Snap is now installed and ready to go.
-
