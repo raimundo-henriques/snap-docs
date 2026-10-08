@@ -24,6 +24,7 @@ Extend snap functionality with API access, internal tools, and customised enviro
 :glob:
 
 Use the REST API <use-the-rest-api>
+Install Ubuntu with TPM-backed FDE <tpm-fde-install>
 Use snapctl <use-snapctl>
 Use the Secret portal <use-the-secret-portal>
 Test snapd fixes <test-snapd-fixes>
