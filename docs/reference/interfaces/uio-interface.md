@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: The uio interface lets a snap use snapd to access a specific userspace I/O device supplied by a gadget snap slot on the system.
+---
+
 (interfaces-uio-interface)=
 #  uio interface
 
@@ -25,5 +31,4 @@ slots:
 ```
 
 Once connected, the consuming snap can use the device via the path specified by the connected slot.
-
 

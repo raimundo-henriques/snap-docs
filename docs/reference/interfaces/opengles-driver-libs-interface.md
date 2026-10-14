@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: The opengles-driver-libs interface lets a snap use snapd to expose OpenGL ES driver libraries to the system for graphics support.
+---
+
 (ref-opengles-driver-libs-interface_opengles-driver-libs-interface)=
 #  opengles-driver-libs interface
 

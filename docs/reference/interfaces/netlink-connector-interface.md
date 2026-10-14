@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: With the netlink-connector interface, a snap can use snapd to communicate through every kernel Netlink connector, which is not app-specific.
+---
+
 (interfaces-netlink-connector-interface)=
 #  netlink-connector interface
 
@@ -22,4 +28,3 @@ The snap of the [usbtop]() kernel module, used to monitor the bandwidth of USB b
 
 The source code for this interface is in the *snapd* repository:
 <https://github.com/canonical/snapd/blob/master/interfaces/builtin/netlink_connector.go>
-

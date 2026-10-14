@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: Install, refresh, inspect, list, and remove optional snap components alongside host snaps from the store or local component files.
+---
+
 (how-to-guides-manage-snaps-using-components)=
 # Work with components
 
@@ -120,4 +126,3 @@ To remove the snap plus any installed components, just remove the snap:
 ```sh
 snap remove my-snap
 ```
-

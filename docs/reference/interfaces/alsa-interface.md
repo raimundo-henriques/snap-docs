@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: Reference documentation for ALSA, which lets a snap use snapd to access raw audio playback and recording devices with low-latency paths.
+---
+
 (interfaces-alsa-interface)=
 #  alsa interface
 
@@ -33,4 +39,3 @@ The _snapcraft.yaml_ for MuseScore includes an ALSA interface definition:
 
 The source code for this interface is in the *snapd* repository:
 <https://github.com/canonical/snapd/blob/master/interfaces/builtin/alsa.go>
-

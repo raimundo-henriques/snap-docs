@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: Reference documentation for firmware-updater-support, which lets a snap operate as the Firmware Updater service through snapd permissions.
+---
+
 (ref-firmware-updater-support-interface_firmware-updater-support-interface)=
 #  firmware-updater-support interface
 

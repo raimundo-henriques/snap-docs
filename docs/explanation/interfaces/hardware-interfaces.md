@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: Learn how gadget snaps expose hardware interface slots on Ubuntu Core, controlling which applications can access device I/O resources.
+---
+
 (reference-operations-interfaces-hardware-interfaces)=
 # Hardware interfaces
 

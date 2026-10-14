@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: Reference documentation for dm-multipath, which lets a snap use snapd to manage device-mapper multipath maps through multipathd.
+---
+
 (ref-dm-multipath-interface_dm-multipath-interface)=
 #  dm-multipath interface
 

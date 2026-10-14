@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: The vcio interface lets a snap use snapd to access Raspberry Pi VideoCore hardware for graphics performance and media codec acceleration.
+---
+
 (interfaces-vcio-interface)=
 #  vcio interface
 
@@ -20,4 +26,3 @@ The Kodi-Raspberry Pi standalone [snap](https://snapcraft.io/kodi-pi-standalone)
 The test code can be found in the snapd repository: https://github.com/canonical/snapd/blob/master/interfaces/builtin/vcio_test.go
 
 The source code for the interface is in the snapd repository: https://github.com/canonical/snapd/blob/master/interfaces/builtin/vcio.go
-

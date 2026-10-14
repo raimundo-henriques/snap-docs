@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: Reference documentation for checkbox-support, which lets a Checkbox certification snap run broad system tests through snapd with privileged access.
+---
+
 (ref-checkbox-support-interface_checkbox-support-interface)=
 #  checkbox-support interface
 

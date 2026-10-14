@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: Reference documentation for custom-device, which lets a snap use snapd plugs and gadget slots to access defined hardware by class and model.
+---
+
 (interfaces-custom-device-interface)=
 #  custom-device interface
 
@@ -164,4 +170,3 @@ The test code can be found in the snapd repository: [https://github.com/canonica
 
 The source code for the interface is in the snapd repository:
 [https://github.com/canonical/snapd/blob/master/interfaces/builtin/custom_device.go](https://github.com/canonical/snapd/blob/master/interfaces/builtin/custom_device.go)
-

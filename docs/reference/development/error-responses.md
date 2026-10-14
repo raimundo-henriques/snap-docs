@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: Interpret HTTP status codes and snapd error kinds returned by the REST API, including conflict, authentication, installation, and maintenance failures.
+---
+
 (reference-development-rest-api-error-responses)=
 # Error responses
 

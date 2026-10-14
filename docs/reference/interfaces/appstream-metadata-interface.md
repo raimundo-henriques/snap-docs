@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: Reference documentation for appstream-metadata, which lets a snap read host AppStream data through snapd for software component information.
+---
+
 (interfaces-appstream-metadata-interface)=
 #  appstream-metadata interface
 
@@ -15,4 +21,3 @@ Requires snapd version _2.41+_.
 
 The source code for this interface is in the *snapd* repository:
 <https://github.com/canonical/snapd/blob/master/interfaces/builtin/appstream_metadata.go>
-

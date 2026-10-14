@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: The network interface lets a snap use snapd for outbound client network access; pair it with network-bind when the application also runs a server.
+---
+
 (interfaces-network-interface)=
 #  network interface
 
@@ -34,4 +40,3 @@ The test code for this interface can be found in the snapd repository:
 
 The source code for this interface is in the *snapd* repository:
 <https://github.com/canonical/snapd/blob/master/interfaces/builtin/network.go>
-

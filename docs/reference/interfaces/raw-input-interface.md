@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: The raw-input interface lets a snap use snapd to access raw input devices directly, for applications that need low-level device events.
+---
+
 (interfaces-raw-input-interface)=
 #  raw-input interface
 
@@ -15,4 +21,3 @@ Requires snapd version _2.51+_.
 
 The source code for this interface is in the *snapd* repository:
 <https://github.com/canonical/snapd/blob/master/interfaces/builtin/raw_input.go>
-

@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: The steam-support interface lets the Steam snap use snapd to configure pressure-vessel containers for the Steam client runtime.
+---
+
 (interfaces-steam-support-interface)=
 #  steam-support interface
 
@@ -19,4 +25,3 @@ The source code for the Steam snap: https://github.com/canonical/steam-snap
 The test code can be found in the snapd repository: https://github.com/canonical/snapd/blob/master/interfaces/builtin/steam_support_test.go
 
 The source code for the interface is in the snapd repository: https://github.com/canonical/snapd/blob/master/interfaces/builtin/steam_support.go
-

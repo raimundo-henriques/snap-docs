@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: Reference documentation for device-buttons, which lets a snap read and write GPIO-defined button input events through snapd, excluding keyboards.
+---
+
 (interfaces-device-buttons-interface)=
 #  device-buttons interface
 
@@ -8,5 +14,4 @@ The interface can access `/dev/input/event*` devices that are udev marked with `
 **Auto-connect**: no
 
 Requires snapd version _2.37+_.
-
 

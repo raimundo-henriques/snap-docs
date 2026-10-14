@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: The pulseaudio interface lets a snap use snapd to access PulseAudio for sound playback and recording; audio-playback and audio-record replace it.
+---
+
 (interfaces-pulseaudio-interface)=
 #  pulseaudio interface
 
@@ -8,5 +14,4 @@ As of snapd 2.41, this interface is deprecated and the {ref}`audio-playback <int
 **Auto-connect**: no
 
 *Note: The {ref}`audio-playback <interfaces-audio-playback-interface>` interface is auto-connected.*
-
 

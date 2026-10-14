@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: The shared-memory interface lets a snap use snapd to share defined shared-memory objects and directories with another snap in /dev/shm.
+---
+
 (interfaces-shared-memory-interface)=
 #  shared-memory interface
 

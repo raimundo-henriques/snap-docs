@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: Build and install snap RPM packages on Red Hat Enterprise Linux by enabling the required repositories and compiling the package manually.
+---
+
 (interfaces-building-snap-rpms-on-rhel)=
 # Building snap rpms on RHEL
 
@@ -70,4 +76,3 @@ The snapd environment can now be tested, and hopefully, used productively:
 $ snap install hello-world
 ```
 A reboot/logout/login should put hello-world in the path.
-

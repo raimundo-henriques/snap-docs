@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: Reference documentation for mount-control, which lets a snap create and manage transient or persistent filesystem mounts through snapd.
+---
+
 (interfaces-mount-control-interface)=
 #  mount-control interface
 
@@ -102,4 +108,3 @@ apps:
 The test code can be found in the snapd repository: [https://github.com/canonical/snapd/blob/master/interfaces/builtin/mount_control_test.go](https://github.com/canonical/snapd/blob/master/interfaces/builtin/mount_control_test.go)
 
 The source code for the interface is in the snapd repository: [https://github.com/canonical/snapd/blob/master/interfaces/builtin/mount_control.go](https://github.com/canonical/snapd/blob/master/interfaces/builtin/mount_control.go)
-

@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: Reference documentation for classic-support, which lets a connected snap use snapd permissions granted to the classic snap on Ubuntu Core devices.
+---
+
 (interfaces-classic-support-interface)=
 #  classic-support interface
 
@@ -19,4 +25,3 @@ Requires snapd version _2.23+_.
 The test code can be found in the snapd repository: https://github.com/canonical/snapd/blob/master/interfaces/builtin/classic_support_test.go
 
 The source code for the interface is in the snapd repository: https://github.com/canonical/snapd/blob/master/interfaces/builtin/classic_support.go
-

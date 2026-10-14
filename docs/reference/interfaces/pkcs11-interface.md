@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: The pkcs11 interface lets a snap use snapd to use the PKCS#11 Cryptographic Token Interface Standard with exposed hardware or software tokens.
+---
+
 (interfaces-pkcs11)=
 #  pkcs11 interface
 
@@ -15,4 +21,3 @@ The test code can be found in the snapd repository:</br>https://github.com/canon
 
 The source code for the interface is in the snapd repository:
 </br>https://github.com/canonical/snapd/blob/master/interfaces/builtin/pkcs11.go
-

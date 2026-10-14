@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: Reference documentation for cups, which lets a snap submit print jobs through the CUPS snap socket in snapd without printer administration.
+---
+
 (interfaces-cups-interface)=
 #  cups interface
 
@@ -69,4 +75,3 @@ See the test CUPS consumer snap:
 https://github.com/canonical/test-snapd-cups-consumer
 
 The source code for the interface is in the snapd repository: [https://github.com/canonical/snapd/blob/master/interfaces/builtin/cups.go](https://github.com/canonical/snapd/blob/master/interfaces/builtin/cups.go)
-

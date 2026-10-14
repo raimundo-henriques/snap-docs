@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: Reference documentation for auditd-support, which lets a snap operate as auditd through snapd with audit control capability and file access.
+---
+
 (interfaces-auditd-support)=
 #  auditd-support interface
 
@@ -18,4 +24,3 @@ The test code can be found in the snapd repository:</br>https://github.com/canon
 
 The source code for the interface is in the snapd repository:
 </br>https://github.com/canonical/snapd/blob/master/interfaces/builtin/auditd_support.go
-

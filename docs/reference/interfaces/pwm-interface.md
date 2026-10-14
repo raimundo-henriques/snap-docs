@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: The pwm interface lets a snap use snapd to access a specific PWM hardware channel supplied by a connected gadget snap slot.
+---
+
 (interfaces-pwm-interface)=
 #  pwm interface
 
@@ -58,4 +64,3 @@ Finally, when the interface is disconnected, `"echo (channel number) > /sys/clas
 The test code can be found in the snapd repository: https://github.com/canonical/snapd/blob/master/interfaces/builtin/pwm_test.go
 
 The source code for the pwm interface is in the snapd repository:[ https://github.com/canonical/snapd/blob/master/interfaces/builtin/pwm.go](https://github.com/canonical/snapd/blob/master/interfaces/builtin/pwm.go).
-

@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: Reference documentation for gbm-driver-libs, which lets a snap expose GBM graphics driver libraries to the system through snapd access.
+---
+
 (ref-gbm-driver-libs-interface_gbm-driver-libs-interface)=
 #  gbm-driver-libs interface
 

@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: Install a snapd build from a GitHub pull-request artifact to test a proposed fix, report its result, and restore the stable release.
+---
+
 (how-to-guides-fix-common-issues-test-snapd-fixes)=
 # Test snapd fixes
 

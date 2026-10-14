@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: The ros-snapd-support interface lets the ros-snapd and ros2-snapd snaps use snapd's apps control API and its supported endpoints.
+---
+
 (interfaces-ros-snapd-support)=
 #  ros-snapd-support interface
 
@@ -18,4 +24,3 @@ The `ros-snapd-support` interface allows the snaps [`ros-snapd`](https://snapcra
 The test code can be found in the snapd repository: [https://github.com/canonical/snapd/blob/master/interfaces/builtin/ros_snapd_support_test.go](https://github.com/canonical/snapd/blob/master/interfaces/builtin/ros_snapd_support_test.go)
 
 The source code for the interface is in the snapd repository:[ https://github.com/canonical/snapd/blob/master/interfaces/builtin/ros_snapd_support.go](https://github.com/canonical/snapd/blob/master/interfaces/builtin/ros_snapd_support.go)
-

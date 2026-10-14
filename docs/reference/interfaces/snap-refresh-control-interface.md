@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: The snap-refresh-control interface lets a snap use snapd and snapctl to unblock its pending refreshes outside the gate-auto-refresh hook.
+---
+
 (interfaces-snap-refresh-control-interface)=
 #  snap-refresh-control interface
 
@@ -20,4 +26,3 @@ Currently it allows connected snaps to execute `snapctl refresh --proceed` to un
 The test code can be found in the snapd repository: https://github.com/canonical/snapd/blob/master/interfaces/builtin/snap_refresh_control_test.go
 
 The source code for the interface is in the snapd repository: https://github.com/canonical/snapd/blob/master/interfaces/builtin/snap_refresh_control.go
-

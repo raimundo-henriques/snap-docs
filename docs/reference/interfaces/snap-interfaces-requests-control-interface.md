@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: The snap-interfaces-requests-control interface lets a snap use snapd's prompting API to request and manage access to system resources.
+---
+
 (interfaces-snap-interfaces-requests-control)=
 #  snap-interfaces-requests-control interface
 
@@ -32,4 +38,3 @@ The test code can be found in the snapd repository:</br>https://github.com/canon
 
 The source code for the interface is in the snapd repository:
 </br>https://github.com/canonical/snapd/blob/master/interfaces/builtin/snap_interfaces_requests_control.go
-

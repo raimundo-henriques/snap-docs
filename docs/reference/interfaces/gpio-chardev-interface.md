@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: Reference documentation for gpio-chardev, which lets a snap access specified GPIO character-device lines using snapd-created virtual devices.
+---
+
 (interfaces-gpio-chardev)=
 #  gpio-chardev interface
 
@@ -60,4 +66,3 @@ The test code can be found in the *snapd* repository:
 
 The source code for this interface is in the *snapd* repository:
 <https://github.com/canonical/snapd/blob/master/interfaces/builtin/gpio_chardev.go>
-

@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: Reference documentation for iscsi-initiator, which lets a snap discover, connect to, and manage iSCSI targets through snapd access.
+---
+
 (ref-iscsi-initiator-interface_iscsi-initiator-interface)=
 #  iscsi-initiator interface
 

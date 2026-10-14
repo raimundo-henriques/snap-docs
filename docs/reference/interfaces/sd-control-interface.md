@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: The sd-control interface lets a snap use snapd to manage SD cards on compatible devices through the DualSD driver and its /dev/DualSD node.
+---
+
 (interfaces-sd-control-interface)=
 #  sd-control interface
 
@@ -17,4 +23,3 @@ Requires snapd version _2.51.3+_.
 
 The source code for this interface is in the *snapd* repository:
 <https://github.com/canonical/snapd/blob/master/interfaces/builtin/sd_control.go>
-

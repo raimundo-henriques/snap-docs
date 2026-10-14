@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: Reference documentation for i2c, which lets a snap access a specified I2C controller through snapd using a matching gadget-defined slot.
+---
+
 (interfaces-i2c-interface)=
 #  i2c interface
 
@@ -50,4 +56,3 @@ KERNEL=="i2c-1", TAG+="snap_client-snap_app-accessing-1-port"
 
 The test code for the interface is in the snapd repository: [https://github.com/canonical/snapd/blob/master/interfaces/builtin/i2c_test.go](https://github.com/canonical/snapd/blob/master/interfaces/builtin/i2c_test.go)
 The source code for the interface is in the snapd repository: [https://github.com/canonical/snapd/blob/master/interfaces/builtin/i2c.go](https://github.com/canonical/snapd/blob/master/interfaces/builtin/i2c.go)
-

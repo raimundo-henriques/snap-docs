@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: The posix-mq interface lets a snap use snapd to create, send, and receive inter-process messages through named POSIX message queues.
+---
+
 (interfaces-posix-mq-interface)=
 #  posix-mq interface
 
@@ -61,4 +67,3 @@ The following definition will create a _posix-mq_ interface with read-only permi
 The test code can be found in the snapd repository: https://github.com/canonical/snapd/blob/master/interfaces/builtin/posix_mq_test.go
 
 The source code for the interface is in the snapd repository: https://github.com/canonical/snapd/blob/master/interfaces/builtin/posix_mq.go
-

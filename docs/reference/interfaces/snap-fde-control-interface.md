@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: The snap-fde-control interface lets a snap use snapd to access the full-disk-encryption subset of its system-volumes API.
+---
+
 (ref-snap-fde-control-interface_snap-fde-control-interface)=
 #  snap-fde-control interface
 

@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: The power-control interface lets a snap use snapd to read system power settings and configure device wake-up events and runtime power management.
+---
+
 (interfaces-power-control-interface)=
 #  power-control interface
 
@@ -24,4 +30,3 @@ This interface enables:
 The test code can be found in the snapd repository: https://github.com/canonical/snapd/blob/master/interfaces/builtin/power_control_test.go
 
 The source code for the interface is in the snapd repository: https://github.com/canonical/snapd/blob/master/interfaces/builtin/power_control.go
-

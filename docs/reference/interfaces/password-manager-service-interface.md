@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: The password-manager-service interface lets a snap use snapd to access desktop password managers such as Secret Service and KWallet.
+---
+
 (interfaces-password-manager-service-interface)=
 #  password-manager-service interface
 
@@ -8,5 +14,4 @@
 **Transitional**: yes
 
 Requires snapd version _2.27+_.
-
 

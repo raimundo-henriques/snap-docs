@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: The physical-memory-control interface lets a snap use snapd to write the physical address space through /dev/mem, subject to kernel settings.
+---
+
 (interfaces-physical-memory-control-interface)=
 #  physical-memory-control interface
 
@@ -10,5 +16,4 @@ This interface can write to all physical memory when the kernel is compiled with
 **Auto-connect**: no
 
 Requires snapd version _2.21+_.
-
 

@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: Reference documentation for desktop, which lets a snap access graphical desktop resources through snapd, including Wayland and desktop file IDs.
+---
+
 (interfaces-desktop-interface)=
 # desktop interface
 

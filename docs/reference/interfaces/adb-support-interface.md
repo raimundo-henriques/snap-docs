@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: Reference documentation for adb-support, which lets a snap use snapd to operate the Android Debug Bridge service with privileged device access.
+---
+
 (interfaces-adb-support-interface)=
 #  adb-support interface
 
@@ -21,4 +27,3 @@ The adb-support interface is used in the _guiscrcpy_ snap: <https://github.com/s
 
 The source code for this interface is in the *snapd* repository:
 <https://github.com/canonical/snapd/blob/master/interfaces/builtin/adb_support.go>
-

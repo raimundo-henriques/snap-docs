@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: The scsi-generic interface lets a snap use snapd to read from and write to SCSI Generic driver devices through their sg device nodes.
+---
+
 (interfaces-scsi-generic-interface)=
 #  scsi-generic interface
 
@@ -21,4 +27,3 @@ apps:
 The test code can be found in the snapd repository: https://github.com/canonical/snapd/blob/master/interfaces/builtin/scsi_generic_test.go
 
 The source code for the interface is in the snapd repository: https://github.com/canonical/snapd/blob/master/interfaces/builtin/scsi_generic.go
-

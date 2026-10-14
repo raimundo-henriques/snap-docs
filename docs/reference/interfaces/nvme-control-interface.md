@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: The nvme-control interface lets a snap use snapd to manage NVMe controllers and namespaces, including health data and fabric devices.
+---
+
 (ref-nvme-control-interface_nvme-control-interface)=
 #  nvme-control interface
 

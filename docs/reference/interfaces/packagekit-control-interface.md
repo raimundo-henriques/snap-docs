@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: The packagekit-control interface lets a snap use snapd to control PackageKit and manage native system packages, alongside AppStream metadata.
+---
+
 (interfaces-packagekit-control-interface)=
 #  packagekit-control interface
 
@@ -9,5 +15,4 @@ This interface is intended to work in tandem with {ref}`the AppStream interface 
 **{ref}`Super-privileged <reference-operations-interfaces-super-privileged-interfaces>`**: yes</br>
 
 Requires snapd version _2.41+_.`
-
 

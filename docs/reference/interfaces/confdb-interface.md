@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: Reference documentation for confdb, which lets a snap access selected confdb views through snapd using account, view, and custodian role attributes.
+---
+
 (interfaces-confdb)=
 #  confdb interface
 
@@ -29,4 +35,3 @@ The test code can be found in the snapd repository:</br>https://github.com/canon
 
 The source code for the interface is in the snapd repository:
 </br>https://github.com/canonical/snapd/blob/master/interfaces/builtin/confdb.go
-

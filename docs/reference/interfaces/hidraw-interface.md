@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: Reference documentation for hidraw, which lets a snap use snapd for raw access to specified USB and Bluetooth human-interface devices.
+---
+
 (interfaces-hidraw-interface)=
 #  hidraw interface
 
@@ -17,5 +23,4 @@ To use a hidraw device, the snap developer must add `plugs: [ hidraw ]` to a sna
 Use  `snap interface hidraw` to see which hidraw devices are available on the system.
 
 Once connected, the consuming snap can use the device via the path specified by the connected slot.
-
 

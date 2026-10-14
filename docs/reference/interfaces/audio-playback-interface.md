@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: Reference documentation for audio-playback, which lets a snap play sound and music through snapd and the system audio service, such as PulseAudio.
+---
+
 (interfaces-audio-playback-interface)=
 #  audio-playback interface
 
@@ -41,4 +47,3 @@ The snapcraft.yaml for [VLC](https://github.com/videolan/vlc) includes audio-pla
 
 The source code for this interface is in the *snapd* repository:
 <https://github.com/canonical/snapd/blob/master/interfaces/builtin/audio_playback.go>
-

@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: Learn how interface hooks run before and after plug-slot connections, letting snaps read attributes, prepare resources, and react to changes.
+---
+
 (explanation-interfaces-interface-hooks)=
 # Interface hooks
 
@@ -60,4 +66,3 @@ If an interface disconnection fails, an *undo* hook is run for any interface hoo
 
 - `connect-plug-<plugname>`
 - `connect-slot-<slotname>`
-

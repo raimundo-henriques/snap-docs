@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: The system-backup interface lets a snap use snapd to read host system data under /var/lib/snapd/hostfs for backup operations.
+---
+
 (interfaces-system-backup-interface)=
 #  system-backup interface
 
@@ -20,5 +26,4 @@ With the following exceptions:
 - `/var/lib/snapd/hostfs/sys`
 
 Importantly, neither snapd nor this interface provide any mechanisms to ensure the system is in a ready state for backups. Reliable backup strategies with snaps utilising this interface will need to account for this themselves.
-
 

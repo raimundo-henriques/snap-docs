@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: The netlink-driver interface lets a snap use snapd to expose a kernel module to user space through Netlink for kernel-to-process data transfer.
+---
+
 (interfaces-netlink-driver-interface)=
 #  netlink-driver interface
 
@@ -18,4 +24,3 @@ Requires snapd version _2.51.1+_.
 
 The source code for this interface is in the *snapd* repository:
 <https://github.com/canonical/snapd/blob/master/interfaces/builtin/netlink_driver.go>
-

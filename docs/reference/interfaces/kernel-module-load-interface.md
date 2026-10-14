@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: Reference documentation for kernel-module-load, which lets a snap load or deny specified kernel modules through snapd using declared attributes.
+---
+
 (interfaces-kernel-module-load-interface)=
 #  kernel-module-load interface
 
@@ -58,4 +64,3 @@ plugs:
 The test code can be found in the snapd repository: [https://github.com/canonical/snapd/blob/master/interfaces/builtin/kernel_module_load.go](https://github.com/canonical/snapd/blob/master/interfaces/builtin/kernel_module_load.go)
 
 The source code for the interface is in the snapd repository:[https://github.com/canonical/snapd/blob/master/interfaces/builtin/kernel_module_load_test.go](https://github.com/canonical/snapd/blob/master/interfaces/builtin/kernel_module_load_test.go)
-

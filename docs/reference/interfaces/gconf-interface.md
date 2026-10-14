@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: Reference documentation for gconf, which lets a snap access current-user GConf settings through snapd for legacy GNOME libraries and applications.
+---
+
 (interfaces-gconf-interface)=
 #  gconf interface
 
@@ -17,4 +23,3 @@ Modern applications should use dconf/gsettings instead and this interface is pro
 The test code can be found in the snapd repository: https://github.com/canonical/snapd/blob/master/interfaces/builtin/gconf_test.go
 
 The source code for the interface is in the snapd repository: https://github.com/canonical/snapd/blob/master/interfaces/builtin/gconf.go
-

@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: The raw-usb interface lets a snap use snapd to access connected USB devices through their raw device interfaces, subject to Unix permissions.
+---
+
 (interfaces-raw-usb-interface)=
 #  raw-usb interface
 
@@ -8,5 +14,4 @@
 Requires snapd version _2.18+_.
 
 **NOTE:** The use of this interface only extends the snapd's own sandbox confinement, it will NOT supersede the classic Unix file permission model so the user still needs to have sufficient `r` or `w` permission to the device node by either run the snap command as root or have a designated udev rule that grants the permission.
-
 

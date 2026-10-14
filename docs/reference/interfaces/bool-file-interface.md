@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: Reference documentation for bool-file, which lets a snap read or write Boolean sysfs files through snapd to represent or change hardware states.
+---
+
 (interfaces-bool-file-interface)=
 #  bool-file interface
 
@@ -73,5 +79,4 @@ The test code for this interface can be found in the snapd repository:</br>
 
 The source code for the interface is in the snapd repository:</br>
 [https://github.com/canonical/snapd/blob/master/interfaces/builtin/bool_file.go](https://github.com/canonical/snapd/blob/master/interfaces/builtin/bool_file.go)
-
 

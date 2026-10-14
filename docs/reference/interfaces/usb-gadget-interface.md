@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: The usb-gadget interface lets a snap use snapd to configure USB Gadget API devices through configfs, such as emulated USB peripherals.
+---
+
 (ref-usb-gadget-interface_usb-gadget-interface)=
 #  usb-gadget interface 
 

@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: Reference documentation for ion-memory-control, which lets a snap access the Android ION memory allocator through snapd on Ubuntu Core.
+---
+
 (interfaces-ion-memory-control-interface)=
 #  ion-memory-control interface
 
@@ -19,4 +25,3 @@ The device is expected in the following location:
 The test code can be found in the snapd repository: https://github.com/canonical/snapd/blob/master/interfaces/builtin/ion_memory_control_test.go
 
 The source code for the interface is in the snapd repository: https://github.com/canonical/snapd/blob/master/interfaces/builtin/ion_memory_control.go
-

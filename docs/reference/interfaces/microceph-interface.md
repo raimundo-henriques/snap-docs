@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: Reference documentation for microceph, which lets a snap access the MicroCeph socket through snapd for the MicroCeph snap's internal use.
+---
+
 (interfaces-microceph)=
 # microceph interface
 
@@ -14,4 +20,3 @@ The test code can be found in the snapd repository:</br>https://github.com/canon
 
 The source code for the interface is in the snapd repository:
 </br>https://github.com/canonical/snapd/blob/master/interfaces/builtin/microceph.go
-

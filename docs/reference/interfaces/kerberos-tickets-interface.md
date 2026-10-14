@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: Reference documentation for kerberos-tickets, which lets a snap access Kerberos tickets in /tmp through snapd while the feature develops.
+---
+
 (ref-kerberos-tickets-interface_kerberos-tickets-interface)=
 #  kerberos-tickets interface
 

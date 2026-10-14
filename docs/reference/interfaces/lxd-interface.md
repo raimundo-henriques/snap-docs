@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: Reference documentation for lxd, which lets a snap access the LXD API through snapd using the socket provided by the lxd snap.
+---
+
 (interfaces-lxd-interface)=
 #  lxd interface
 
@@ -5,5 +11,4 @@
 
 **{ref}`Auto-connect <explanation-interfaces-interface-auto-connection>`**: no</br>
 **{ref}`Super-privileged <reference-operations-interfaces-super-privileged-interfaces>`**: yes</br>
-
 

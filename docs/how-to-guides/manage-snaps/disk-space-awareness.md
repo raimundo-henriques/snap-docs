@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: Enable experimental snapd disk-space checks before installs, refreshes, or removals to prevent operations from failing on low storage.
+---
+
 (how-to-guides-manage-snaps-disk-space-awareness)=
 # Disk space awareness
 
@@ -41,4 +47,3 @@ snap set system experimental.check-disk-space-install=true
 ```
 
 See {ref}`System options <how-to-guides-manage-snaps-set-system-options>` for more details on setting and disabling options.
-

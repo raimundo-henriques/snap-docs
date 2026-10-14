@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: The xilinx-dma interface lets a snap use snapd to access Xilinx DMA IP through a connected PCIe card on Ubuntu Core devices.
+---
+
 (interfaces-xilinx-dma)=
 #  xilinx-dma interface
 
@@ -14,4 +20,3 @@ The test code can be found in the snapd repository:</br>https://github.com/canon
 
 The source code for the interface is in the snapd repository:
 </br>https://github.com/canonical/snapd/blob/master/interfaces/builtin/xilinx_dma.go
-

@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: The ptp interface lets a snap use snapd to access Linux Precision Time Protocol hardware clocks and synchronise time to sub-100 nanoseconds.
+---
+
 (interfaces-ptp-interface)=
 #  ptp interface
 
@@ -17,4 +23,3 @@ See [sysfs-ptp](https://github.com/torvalds/linux/blob/master/Documentation/ABI/
 The test code can be found in the snapd repository: https://github.com/canonical/snapd/blob/master/interfaces/builtin/ptp_test.go
 
 The source code for the interface is in the snapd repository: https://github.com/canonical/snapd/blob/master/interfaces/builtin/ptp.go
-

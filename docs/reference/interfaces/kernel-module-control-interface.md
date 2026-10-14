@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: Reference documentation for kernel-module-control, which lets a snap insert, remove, and query kernel modules through privileged snapd access.
+---
+
 (interfaces-kernel-module-control-interface)=
 #  kernel-module-control interface
 
@@ -7,5 +13,4 @@
 **{ref}`Super-privileged <reference-operations-interfaces-super-privileged-interfaces>`**: yes
 
 Consumers of this interface require a {ref}`snap declaration <interfaces-process-for-aliases-auto-connections-and-tracks>` for distribution via the Snap Store.
-
 

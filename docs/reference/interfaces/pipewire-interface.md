@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: The pipewire interface lets a snap use snapd to access a user's PipeWire socket when desktop portals do not provide the required capability.
+---
+
 (interfaces-pipewire-interface)=
 #  pipewire interface
 
@@ -19,4 +25,3 @@ It also offers `shmctl' access.
 
 * The source code for the Pipewire interface is in the snapd repository: [pipewire.go](https://github.com/canonical/snapd/blob/master/interfaces/builtin/pipewire.go)
 * For further testing details, see: [pipewire\_test.go](https://github.com/canonical/snapd/blob/master/interfaces/builtin/pipewire_test.go)
-

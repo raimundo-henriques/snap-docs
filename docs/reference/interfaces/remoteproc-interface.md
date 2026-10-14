@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: The remoteproc interface lets a snap use snapd to load firmware and start or stop embedded microcontrollers through Linux Remote Processor Framework.
+---
+
 (interfaces-remoteproc-interface)=
 #  remoteproc interface
 
@@ -23,4 +29,3 @@ The test code can be found in the snapd repository:
 
 The source code for this interface is in the *snapd* repository:
 <https://github.com/canonical/snapd/blob/master/interfaces/builtin/remoteproc.go>
-

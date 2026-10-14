@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: Trace commands launched during snap startup with snap run --trace-exec to identify slow helper processes and diagnose launch performance issues.
+---
+
 (interfaces-debuging-startup-performance)=
 # Debug startup performance
 
@@ -16,4 +22,3 @@ Total time: 0.270s
 This example shows that there are 3 helpers executed. First snap-update-ns which takes 0.010s to run, then snap-confine and finally snap-exec. This examples shows the minimum amount of setup that each snap requires. Some snap that use desktop components may have extra scripts running (e.g. via the desktop-helpers component).
 
 At most the slowest 10 execve() calls will be displayed.
-

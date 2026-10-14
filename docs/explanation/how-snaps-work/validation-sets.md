@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: Understand validation sets, signed assertions that constrain which snaps and component revisions may be installed together on a device.
+---
+
 (explanation-how-snaps-work-validation-sets)=
 # Validation sets
 

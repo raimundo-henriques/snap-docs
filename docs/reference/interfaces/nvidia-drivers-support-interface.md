@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: The nvidia-drivers-support interface lets the nvidia-assemble snap use snapd to access NVIDIA devices while loading the NVIDIA kernel driver.
+---
+
 (interfaces-nvidia-drivers-support-interface)=
 #  nvidia-drivers-support interface
 
@@ -18,4 +24,3 @@ This interface permits the [nvidia-assemble](https://snapcraft.io/nvidia-assembl
 The test code can be found in the snapd repository: https://github.com/canonical/snapd/blob/master/interfaces/builtin/nvidia_drivers_support_test.go
 
 The source code for the interface is in the snapd repository: https://github.com/canonical/snapd/blob/master/interfaces/builtin/nvidia_drivers_support.go
-

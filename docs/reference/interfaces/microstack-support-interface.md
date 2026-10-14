@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: Reference documentation for microstack-support, which lets the MicroStack snap use snapd resources for OpenStack services and virtual machines.
+---
+
 (interfaces-microstack-support-interface)=
 #  microstack-support interface
 
@@ -30,4 +36,3 @@ This interface allows MicroStack to operate by allowing the necessary system cal
 The snapcraft.yaml for MicroStack can be found here: https://github.com/coreycb/microstack/blob/1-tls/snapcraft.yaml
 
 The source code for the interface is in the snapd repository: https://github.com/canonical/snapd/blob/master/interfaces/builtin/microstack_support.go
-

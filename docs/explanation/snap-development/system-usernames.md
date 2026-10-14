@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: Use system usernames in snaps to run services with controlled privileges, including the transition from snap_daemon to _daemon_.
+---
+
 (interfaces-system-usernames)=
 # System usernames
 
@@ -107,4 +113,3 @@ Some administrators may adjust their non-snap container runtimes to use non-defa
 ## References
 
 * https://forum.snapcraft.io/t/multiple-users-and-groups-in-snaps/1461
-

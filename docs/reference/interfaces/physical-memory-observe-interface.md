@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: The physical-memory-observe interface lets a snap use snapd to read the physical address space through /dev/mem, subject to kernel settings.
+---
+
 (interfaces-physical-memory-observe-interface)=
 #  physical-memory-observe interface
 
@@ -10,5 +16,4 @@ This interface can write to all physical memory when the kernel is compiled with
 **Auto-connect**: no
 
 Requires snapd version _2.21+_.
-
 

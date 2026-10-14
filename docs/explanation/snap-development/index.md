@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: Explore snap development concepts, including installation modes, system usernames, shell completion, API access, and customised environments.
+---
+
 (explanation-index-snap-development)=
 # Snap development
 

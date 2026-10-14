@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: Create and manage snap quota groups to limit service memory, CPU, thread, and journal-log usage, including nested resource controls.
+---
+
 (how-to-guides-manage-snaps-use-resource-quotas)=
 # Use resource quotas
 

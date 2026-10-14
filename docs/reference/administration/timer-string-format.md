@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: Specify recurring refresh and service schedules with timer strings, including weekdays, time spans, monthly weeks, intervals, and randomisation.
+---
+
 (interfaces-timer-string-format)=
 # Timer string format
 

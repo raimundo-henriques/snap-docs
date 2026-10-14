@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: Reference documentation for microovn, which lets the MicroOVN snap access its control socket through snapd for Open Virtual Network management.
+---
+
 (interfaces-microovn-interface)=
 #  microovn interface
 
@@ -20,4 +26,3 @@ With the MicroOVN snap installed, the socket is located at the following locatio
 The test code can be found in the snapd repository: https://github.com/canonical/snapd/blob/master/interfaces/builtin/microovn_test.go
 
 The source code for the interface is in the snapd repository: https://github.com/canonical/snapd/blob/master/interfaces/builtin/microovn.go
-

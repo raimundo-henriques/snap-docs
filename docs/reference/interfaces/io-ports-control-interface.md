@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: Reference documentation for io-ports-control, which lets a snap use snapd to access and modify all I/O port permissions through /dev/port.
+---
+
 (interfaces-io-ports-control-interface)=
 #  io-ports-control interface
 
@@ -6,5 +12,4 @@
 **Auto-connect**: no
 
 Requires snapd version _2.21+_.
-
 

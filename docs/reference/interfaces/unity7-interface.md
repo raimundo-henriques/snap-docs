@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: The unity7 interface lets a snap use snapd to interact with Unity 7 session services, which provide privileged access to the user session.
+---
+
 (interfaces-unity7-interface)=
 #  unity7 interface
 
@@ -11,5 +17,4 @@ This interface grants privileged access to the user's session because the Unity 
 See The desktop interfaces for further details.
 
 **Condition to Connect**: If your snap has a graphical user interface and is expected to be launched on Unity desktop environment(the default DE on Ubuntu 16.04), you *should* connect this interface.
-
 

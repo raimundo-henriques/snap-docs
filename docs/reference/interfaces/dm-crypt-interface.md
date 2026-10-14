@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: Reference documentation for dm-crypt, which lets a snap use snapd to set up, unlock, format, and mount encrypted external block storage.
+---
+
 (interfaces-dm-crypt-interface)=
 #  dm-crypt interface
 
@@ -22,4 +28,3 @@ Often, _dm-crypt_ is statically linked into the kernel (`CONFIG_DM_CRYPT=y`). Th
 The test code can be found in the snapd repository: https://github.com/canonical/snapd/blob/master/interfaces/builtin/dm_crypt_test.go
 
 The source code for the interface is in the snapd repository:[ https://github.com/canonical/snapd/blob/master/interfaces/builtin/dm_crypt.go](https://github.com/canonical/snapd/blob/master/interfaces/builtin/dm_crypt.go)
-

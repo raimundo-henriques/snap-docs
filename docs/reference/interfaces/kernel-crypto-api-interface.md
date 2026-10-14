@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: Reference documentation for kernel-crypto-api, which lets a snap access Linux kernel cryptographic ciphers through snapd after connection.
+---
+
 (interfaces-kernel-crypto-api-interface)=
 #  kernel-crypto-api interface
 
@@ -16,4 +22,3 @@ The kernel crypto API has been designed to be used by any process such that usin
 The test code can be found in the snapd repository: https://github.com/canonical/snapd/blob/master/interfaces/builtin/kernel_crypto_api_test.go
 
 The source code for the interface is in the snapd repository: https://github.com/canonical/snapd/blob/master/interfaces/builtin/kernel_crypto_api.go
-

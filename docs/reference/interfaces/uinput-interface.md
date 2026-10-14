@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: The uinput interface lets a snap use snapd to emulate input devices and inject input events through /dev/uinput, subject to device permissions.
+---
+
 (interfaces-uinput-interface)=
 #  uinput interface
 
@@ -17,5 +23,4 @@ See {ref}`the joystick interface <interfaces-joystick-interface>` and {ref}`the 
 **{ref}`Super-privileged <reference-operations-interfaces-super-privileged-interfaces>`**: yes</br>
 
 Requires snapd version  *2.46+* .
-
 

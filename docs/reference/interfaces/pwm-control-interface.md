@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: The pwm-control interface lets a snap use snapd to control all PWM channels, a privileged capability still under development for device hardware.
+---
+
 (interfaces-pwm-control-interface)=
 #  pwm-control interface
 
@@ -11,5 +17,4 @@ The `pwm-control` interface can potentially impact the system and other snaps, a
 
 **{ref}`Auto-connect <explanation-interfaces-interface-auto-connection>`**: no</br>
 **{ref}`Super-privileged <reference-operations-interfaces-super-privileged-interfaces>`**: yes
-
 

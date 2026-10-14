@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: Build and test a confined snap that uses the Secret portal, desktop interface, and libsecret to encrypt application secrets.
+---
+
 (how-to-guides-use-the-secret-portal)=
 # Using the Secret portal
 

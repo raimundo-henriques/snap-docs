@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: Reference documentation for desktop-launch, which lets a strictly confined snap use snapd to identify and launch desktop apps in other snaps.
+---
+
 (interfaces-desktop-launch-interface)=
 #  desktop-launch interface
 
@@ -23,4 +29,3 @@ Requires snapd version _2.52+_.
 
 The source code for this interface is in the *snapd* repository:
 <https://github.com/canonical/snapd/blob/master/interfaces/builtin/desktop_launch.go>
-

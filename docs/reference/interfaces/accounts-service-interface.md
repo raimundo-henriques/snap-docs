@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: Reference documentation for accounts-service, which lets a snap communicate through snapd with the accounts service, including GNOME Online Accounts.
+---
+
 (interfaces-accounts-service-interface)=
 #  accounts-service interface
 
@@ -18,4 +24,3 @@ The snapcraft.yaml for ONLY OFFICE Document Server can be found in the projectâ€
 
 The source code for this interface is in the *snapd* repository:
 <https://github.com/canonical/snapd/blob/master/interfaces/builtin/accounts_service.go>
-

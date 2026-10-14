@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: The udisks2 interface lets a snap use snapd to access the UDisks2 service and perform privileged storage operations on the device.
+---
+
 (interfaces-udisks2-interface)=
 #  udisks2 interface
 
@@ -6,5 +12,4 @@
 When used on [Ubuntu Core](https://ubuntu.com/core/docs), the _udisks2_ interface requires access enabled from a corresponding [gadget snap](https://ubuntu.com/core/docs/gadget-snaps).
 
 **Auto-connect**: no
-
 

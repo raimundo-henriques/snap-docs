@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: Reference documentation for kernel-firmware-control, which lets a snap set a custom firmware search path through snapd for microcontroller uploads.
+---
+
 (interfaces-kernel-firmware-control-interface)=
 #  kernel-firmware-control interface
 
@@ -18,4 +24,3 @@ The test code can be found in the snapd repository:
 
 The source code for this interface is in the *snapd* repository:
 <https://github.com/canonical/snapd/blob/master/interfaces/builtin/kernel_firmware_control.go>
-

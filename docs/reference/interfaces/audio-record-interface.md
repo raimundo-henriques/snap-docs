@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: Reference documentation for audio-record, which lets a snap record audio through snapd and the system audio service, including microphone access.
+---
+
 (interfaces-audio-record-interface)=
 #  audio-record interface
 
@@ -29,4 +35,3 @@ Mumble is a voice chat platform and a good example of an application using audio
 
 The source code for this interface is in the *snapd* repository:
 <https://github.com/canonical/snapd/blob/master/interfaces/builtin/audio_record.go>
-

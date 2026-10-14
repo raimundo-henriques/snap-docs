@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: The raw-volume interface lets a snap use snapd to access a specific disk partition provided by a gadget snap slot on the device safely.
+---
+
 (interfaces-raw-volume-interface)=
 #  raw-volume interface
 
@@ -25,5 +31,4 @@ slots:
 ```
 
 Once connected, the consuming snap can use the device via the path specified by the connected slot.
-
 

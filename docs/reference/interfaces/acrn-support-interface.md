@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: Reference documentation for acrn-support, which lets a snap use snapd to access and control user virtual machines running on the ACRN hypervisor.
+---
+
 (interfaces-acrn-support-interface)=
 #  acrn-support interface
 
@@ -18,4 +24,3 @@ The following (third-party) repository contains recipes to create snap packages 
 The test code can be found in the snapd repository: https://github.com/canonical/snapd/blob/master/interfaces/builtin/acrn_support_test.go
 
 The source code for the interface is in the snapd repository: https://github.com/canonical/snapd/blob/master/interfaces/builtin/acrn_support.go
-

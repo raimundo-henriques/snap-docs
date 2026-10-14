@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: Test an unpacked snap directly from a directory with snap try, using an unsquashed package or a prime directory built by Snapcraft.
+---
+
 (interfaces-snap-try)=
 # Test snaps with snap try
 
@@ -104,4 +110,3 @@ hello-world 0.1 mounted from /home/user/hello-world/prime
 ```
 
 For further help on testing and debugging a snap, see [Iterating over a build](https://documentation.ubuntu.com/snapcraft/stable/how-to/debugging/debug-a-snap/) and {ref}`Debugging snaps <how-to-guides-fix-common-issues-debug-snaps>`.
-

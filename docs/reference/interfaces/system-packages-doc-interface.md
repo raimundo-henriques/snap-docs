@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: The system-packages-doc interface lets a snap use snapd to access host documentation files so applications can display local system help.
+---
+
 (interfaces-system-packages-doc)=
 #  system-packages-doc interface
 
@@ -30,4 +36,3 @@ The interface it is not connected automatically because the listed documentation
 The test code can be found in the snapd repository:</br>https://github.com/canonical/snapd/blob/master/interfaces/builtin/system_packages_doc_test.go
 
 The source code for the interface is in the snapd repository:</br>https://github.com/canonical/snapd/blob/master/interfaces/builtin/system_packages_doc.go
-

@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: Control who can discover and install a registered snap by setting its public, private, or unlisted visibility and managing collaborator access.
+---
+
 (interfaces-public-private-unlisted-snaps)=
 # Public, private and unlisted-snaps
 

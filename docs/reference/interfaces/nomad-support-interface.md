@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: The nomad-support interface lets a snap use snapd to run HashiCorp Nomad with cpuset management, NVIDIA plugin support, and service capabilities.
+---
+
 (interfaces-nomad-support)=
 #  nomad-support interface
 
@@ -14,4 +20,3 @@ See {ref}`Interface management <how-to-guides-work-with-snaps-connect-interfaces
 The test code can be found in the snapd repository:</br>https://github.com/canonical/snapd/blob/master/interfaces/builtin/nomad_support_test.go
 
 The source code for the interface is in the snapd repository:</br>https://github.com/canonical/snapd/blob/master/interfaces/builtin/nomad_support.go
-

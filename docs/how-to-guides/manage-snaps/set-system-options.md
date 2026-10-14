@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: View, set, retrieve, and unset system-wide snap configuration options, including refresh schedules and experimental feature flags.
+---
+
 (how-to-guides-manage-snaps-set-system-options)=
 # Set system options
 
@@ -67,4 +73,3 @@ $ snap get -d system
 ```{caution}
 Options are _not visible_ until after they are set. The `snap get` command can then be used to check their state.
 ```
-

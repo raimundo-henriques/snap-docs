@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: Reference documentation for kvm, which lets a snap access /dev/kvm through snapd to use and control the KVM hypervisor with privileged access.
+---
+
 (interfaces-kvm-interface)=
 #  kvm interface
 
@@ -6,5 +12,4 @@
 **Auto-connect**: no
 
 Requires snapd version _2.28+_.
-
 

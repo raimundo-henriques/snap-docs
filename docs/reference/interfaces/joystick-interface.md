@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: Reference documentation for joystick, which lets a snap access joystick devices through snapd, including marked input event devices.
+---
+
 (interfaces-joystick-interface)=
 #  joystick interface
 
@@ -8,5 +14,4 @@ The interface can access `/dev/input/js*` (with snap version _2.24+_) and `/dev/
 **Auto-connect**: no
 
 Requires snapd version _2.24+_.
-
 

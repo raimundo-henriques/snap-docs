@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: Reference documentation for account-control, which lets a management snap use snapd to manage non-system users and groups on Ubuntu Core.
+---
+
 (interfaces-account-control-interface)=
 #  account-control interface
 
@@ -22,4 +28,3 @@ The account-control interface is used in the _usbtop_ snap to help monitor USB t
 
 The source code for this interface is in the *snapd* repository:
 <https://github.com/canonical/snapd/blob/master/interfaces/builtin/account_control.go>
-

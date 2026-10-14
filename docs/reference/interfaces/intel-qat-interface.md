@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: Reference documentation for intel-qat, which lets a snap use snapd to access Intel QuickAssist hardware, VFIO, IOMMU, and QAT nodes.
+---
+
 (interfaces-intel-qat)=
 #  intel-qat interface
 
@@ -15,4 +21,3 @@ For Intel QAT implementation details, see the [kernel support](https://elixir.bo
 The test code can be found in the snapd repository:</br>https://github.com/canonical/snapd/blob/master/interfaces/builtin/intel_qat_test.go
 
 The source code for the interface is in the snapd repository:</br>https://github.com/canonical/snapd/blob/master/interfaces/builtin/intel_qat.go
-

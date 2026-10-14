@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: Reference documentation for fuse-support, which lets a snap access FUSE filesystems through snapd using mount points in snap-specific writable paths.
+---
+
 (interfaces-fuse-support-interface)=
 #  fuse-support interface
 
@@ -14,4 +20,3 @@
 ## Corresponding Source
 
 <https://github.com/canonical/snapd/blob/master/interfaces/builtin/fuse_support.go>
-

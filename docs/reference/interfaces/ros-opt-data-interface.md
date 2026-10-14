@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: The ros-opt-data interface lets a snap use snapd to mount the host's /opt/ros data read-only for Robot Operating System applications.
+---
+
 (interfaces-ros-opt-data)=
 #  ros-opt-data interface
 
@@ -100,4 +106,3 @@ The test code can be found in the snapd repository: [https://github.com/canonica
 
 The source code for the interface is in the snapd repository:
 [https://github.com/canonical/snapd/blob/master/interfaces/builtin/ros_opt_data.go](https://github.com/canonical/snapd/blob/master/interfaces/builtin/ros_opt_data.go)
-

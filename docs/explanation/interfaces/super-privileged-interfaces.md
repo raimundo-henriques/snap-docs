@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: Learn why super-privileged interface plugs require store approval before distribution, and which interfaces receive this additional scrutiny.
+---
+
 (reference-operations-interfaces-super-privileged-interfaces)=
 # Super-privileged interfaces
 

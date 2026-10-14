@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: Reference documentation for gpio-control, which lets a snap use snapd for privileged, low-level control of GPIO pins, devices, and sysfs paths.
+---
+
 (interfaces-gpio-control-interface)=
 #  gpio-control interface
 
@@ -68,4 +74,3 @@ This ensures clarity and aligns with the best practices for naming interface ref
 
 * The source code for the GPIO Control interface is in the snapd repository: [gpio\_control.go](https://github.com/canonical/snapd/blob/master/interfaces/builtin/gpio_control.go)
 * For further testing details, see: [gpio\_control\_test.go](https://github.com/canonical/snapd/blob/master/interfaces/builtin/gpio_control_test.go)
-

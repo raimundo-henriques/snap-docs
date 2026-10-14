@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: Use Snapcraft's passthrough keyword to include unsupported top-level or app settings in snap.yaml while new snapd features are in development.
+---
+
 (interfaces-using-in-development-features)=
 # Using in-development features
 
@@ -62,4 +68,3 @@ application-level feature:
 
 In this case, a passthrough is used within the scope of the app ``foo`` to set
 the existing ``daemon`` keyword to a value of ``complex``.
-

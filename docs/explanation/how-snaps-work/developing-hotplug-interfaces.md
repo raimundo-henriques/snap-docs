@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: Develop snapd interfaces with USB hotplug support by creating system slots for detected devices and handling their dynamic connections.
+---
+
 (interfaces-developing-hotplug-interfaces)=
 # Developing hotplug interfaces
 
@@ -163,4 +169,3 @@ Similarly, when the device is disconnected and its slot had been connected to a 
 - **`disconnect-plug-<plugname>`**
 
 This mechanism can be used by snaps to react to devices appearing/disappearing from their connected plugs. Please refer to the documentation on {ref}`Interface Hooks <explanation-interfaces-interface-hooks>` for more details on this functionality.
-

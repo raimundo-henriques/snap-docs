@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: Track current snapd package versions and re-execution support across Ubuntu, Debian, Fedora, EPEL, SUSE, Arch, and other Linux distributions.
+---
+
 (reference-administration-distribution-support)=
 # Distribution support
 

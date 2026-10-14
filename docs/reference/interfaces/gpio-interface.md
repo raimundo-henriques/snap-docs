@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: Reference documentation for gpio, which lets a snap access a specified GPIO pin through snapd after connecting to a matching gadget slot.
+---
+
 (interfaces-gpio-interface)=
 #  gpio interface
 
@@ -59,4 +65,3 @@ Finally, when the interface is disconnected,  `"echo (pin number) > /sys/class/g
 The hook and control scripts for _pi-fancontrol_ can be found in the project's GitHub repository: [https://github.com/ogra1/pi-fancontrol-snap](https://github.com/ogra1/pi-fancontrol-snap)
 
 The source code for the GPIO interface is in the _snapd_ repository: [https://github.com/canonical/snapd/blob/master/interfaces/builtin/gpio.go](https://github.com/canonical/snapd/blob/master/interfaces/builtin/gpio.go).
-

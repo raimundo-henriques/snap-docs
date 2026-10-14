@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: Reference documentation for allegro-vcu, which lets a snap use snapd to access the Allegro Video Core Unit through its hardware control module.
+---
+
 (interfaces-allegro-vcu-interface)=
 #  allegro-vcu interface
 
@@ -19,4 +25,3 @@ These operations should be considered privileged since the driver assumes truste
 The test code can be found in the snapd repository: https://github.com/canonical/snapd/blob/master/interfaces/builtin/allegro_vcu_test.go
 
 The source code for the interface is in the snapd repository:[ https://github.com/canonical/snapd/blob/master/interfaces/builtin/allegro_vcu.go](https://github.com/canonical/snapd/blob/master/interfaces/builtin/allegro_vcu.go)
-

@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: The openvswitch interface lets a snap use snapd to access the Open vSwitch socket and control Open vSwitch on the host system.
+---
+
 (interfaces-openvswitch-interface)=
 #  openvswitch interface
 
@@ -6,5 +12,4 @@
 **Auto-connect**: no
 
 Requires snapd version _2.20+_.
-
 

@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: The snapd-control interface lets a snap use snapd to install, remove, and manage snaps, including controlled refresh scheduling.
+---
+
 (interfaces-snapd-control-interface)=
 #  snapd-control interface
 
@@ -36,4 +42,3 @@ Consequently, consumers of this interface require {ref}`approval <interfaces-pro
 The source code can be found in the snapd repository: https://github.com/canonical/snapd/blob/master/interfaces/builtin/snapd_control.go
 
 The test code for the interface is in the snapd repository: https://github.com/canonical/snapd/blob/master/interfaces/builtin/snapd_control_test.go
-

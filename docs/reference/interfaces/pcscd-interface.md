@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: The pcscd interface lets a snap use snapd to communicate with the PC/SC smart card daemon and access smart cards or secure tokens.
+---
+
 (interfaces-pcscd-interface)=
 #  pcscd interface
 
@@ -13,4 +19,3 @@ The `pcscd` interface  permits communication with [PCSD](https://manpages.ubuntu
 The test code can be found in the snapd repository: https://github.com/canonical/snapd/blob/master/interfaces/builtin/pcscd_test.go
 
 The source code for the interface is in the snapd repository: https://github.com/canonical/snapd/blob/master/interfaces/builtin/pcscd.go
-

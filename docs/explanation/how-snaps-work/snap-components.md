@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: Understand optional snap components: how they are built, installed beside host snaps, mounted at runtime, and managed through commands or the API.
+---
+
 (explanation-how-snaps-work-snap-components)=
 # Snap components
 

@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: Reference documentation for hardware-observe, which lets a snap inspect system hardware through snapd with read-only files and utilities.
+---
+
 (interfaces-hardware-observe-interface)=
 #  hardware-observe interface
 
@@ -115,4 +121,3 @@ Examples: `/etc/modprobe.d/{,*}`,</br>
 The test code for the interface is in the snapd repository: [https://github.com/canonical/snapd/blob/master/interfaces/builtin/hardware_observe_test.go](https://github.com/canonical/snapd/blob/master/interfaces/builtin/hardware_observe_test.go)
 
 The source code for the interface is in the snapd repository: [https://github.com/canonical/snapd/blob/master/interfaces/builtin/hardware_observe.go](https://github.com/canonical/snapd/blob/master/interfaces/builtin/hardware_observe.go)
-

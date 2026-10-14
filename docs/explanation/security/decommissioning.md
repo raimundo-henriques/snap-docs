@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: Understand how removing snapd differs on Classic Ubuntu, Ubuntu Core, and Hybrid Classic systems where it provides essential system functions.
+---
+
 (explanation-security-decommissioning)=
 # Decommissioning
 

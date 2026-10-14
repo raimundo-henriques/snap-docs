@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: Reference documentation for egl-driver-libs, which lets a snap access EGL graphics subsystem libraries through snapd while the feature develops.
+---
+
 (interfaces-egl-driver-libs)=
 #  egl-driver-libs interface
 

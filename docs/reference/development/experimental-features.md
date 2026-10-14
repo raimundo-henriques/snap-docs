@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: Enable and assess snapd experimental features, follow their graduation or removal process, and review each feature's availability and status.
+---
+
 (ref-experimental-features_experimental-features)=
 # Experimental features
 

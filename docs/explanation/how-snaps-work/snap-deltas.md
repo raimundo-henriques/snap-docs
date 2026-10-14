@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: Learn how binary snap deltas reduce bandwidth by transferring only revision changes when snaps are uploaded to or downloaded from the store.
+---
+
 (how-to-guides-manage-snaps-snap-deltas)=
 # Snap deltas
 

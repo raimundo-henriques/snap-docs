@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: Reference documentation for dsp, which lets a snap control digital signal processors through snapd on supported devices with gadget hardware access.
+---
+
 (interfaces-dsp-interface)=
 #  dsp interface
 
@@ -17,4 +23,3 @@ Requires snapd version _2.51+_.
 
 The source code for this interface is in the *snapd* repository:
 <https://github.com/canonical/snapd/blob/master/interfaces/builtin/dsp.go>
-

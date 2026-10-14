@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: Reference documentation for fpga, which lets a snap access the Linux FPGA subsystem through snapd on supported devices and interfaces.
+---
+
 (interfaces-fpga-interface)=
 #  fpga interface
 
@@ -18,4 +24,3 @@ Devices:
 The test code can be found in the snapd repository: https://github.com/canonical/snapd/blob/master/interfaces/builtin/fpga_test.go
 
 The source code for the interface is in the snapd repository:[https://github.com/canonical/snapd/blob/master/interfaces/builtin/fpga.go](https://github.com/canonical/snapd/blob/master/interfaces/builtin/fpga.go)
-

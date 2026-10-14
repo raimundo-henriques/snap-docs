@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: The tee interface lets a snap use snapd to access Trusted Execution Environment devices through the Linux kernel TEE subsystem.
+---
+
 (interfaces-tee-interface)=
 #  tee interface
 
@@ -21,4 +27,3 @@ The official [Ubuntu Core gadget snap](https://github.com/kubiko/imx-gadget) for
 The test code can be found in the snapd repository: https://github.com/canonical/snapd/blob/master/interfaces/builtin/tee_test.go
 
 The source code for the interface is in the snapd repository: https://github.com/canonical/snapd/blob/master/interfaces/builtin/tee.go
-

@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: Understand assertions, signed documents used by snapd, the store, and Snapcraft to establish identity, validate processes, and apply policy.
+---
+
 (explanation-security-assertions)=
 # Assertions
 
@@ -93,4 +99,3 @@ However, these hash values will appear different, depending on whether they were
 This difference is because the Store uses hex-encoded byte arrays while the snapd REST API encodes hashes with with _base64_. 
 
 Developers can typically use hash-encoded values directly in their code, whereas _base64_ values will need to be decoded first, such as with the [base64](https://manpages.ubuntu.com/manpages/jammy/en/man1/base64.1.html) command.
-

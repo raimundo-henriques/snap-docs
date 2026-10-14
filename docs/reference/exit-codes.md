@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: Identify exit codes returned by the `snap` command when scripting operations, including success, retryable conflicts, build failures, and usage errors.
+---
+
 (reference-operations-exit-codes)=
 # Exit codes
 The `snap` command uses the following exit codes. These are useful when scripting `snap` operations or

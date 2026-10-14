@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: The snap-refresh-observe interface lets a snap use snapd to track refreshes and their inhibition as a refresh awareness client.
+---
+
 (interfaces-snap-refresh-observe-interface)=
 #  snap-refresh-observe interface
 
@@ -27,4 +33,3 @@ It is intended to be used _only_ to mark the existence of a refresh awareness cl
 The test code can be found in the snapd repository: https://github.com/canonical/snapd/blob/master/interfaces/builtin/snap_refresh_observe_test.go
 
 The source code for the interface is in the snapd repository: https://github.com/canonical/snapd/blob/master/interfaces/builtin/snap_refresh_observe.go
-

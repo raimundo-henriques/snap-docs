@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: Understand how snapd authenticates API callers and authorizes operations that manage snaps, alter security policies, or change system state.
+---
+
 (explanation-security-api-authentication-and-authorization)=
 # API Authentication and Authorization
 

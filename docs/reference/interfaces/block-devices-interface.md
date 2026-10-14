@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: Reference documentation for block-devices, which lets a snap use snapd to perform privileged operations on raw disk devices and their partitions.
+---
+
 (interfaces-block-devices-interface)=
 #  block-devices interface
 
@@ -18,5 +24,4 @@ plugs:
 The `allow-partitions` attribute requires snapd version *2.71+*.
 
 Consumers of this interface require a {ref}`snap declaration <interfaces-process-for-aliases-auto-connections-and-tracks>` for distribution via the Snap Store.
-
 

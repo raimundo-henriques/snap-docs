@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: Reference documentation for iio, which lets a snap use snapd to access a specified Industrial I/O device through a connected slot path.
+---
+
 (interfaces-iio-interface)=
 #  iio interface
 
@@ -8,5 +14,4 @@
   * `path` (slot): path to IIO device node e.g. `/dev/iio:device0`
 
 Available IIO devices for the system can be seen with `snap connections`. Once connected, the consuming snap can use the device via the path specified by the connected slot.
-
 

@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: Learn how the snapd team plans releases, prepares artifacts, runs validation, and promotes versions through release channels.
+---
+
 (explanation-security-snapd-release-process)=
 # Snapd release process
 

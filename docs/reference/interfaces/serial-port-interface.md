@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: The serial-port interface lets a snap use snapd for input and output through a specific serial device node supplied by a gadget snap slot.
+---
+
 (interfaces-serial-port-interface)=
 #  serial-port interface
 
@@ -80,4 +86,3 @@ The test code can be found in the snapd repository:
 
 The source code for the interface is in the snapd repository:
 [serial_port.go](https://github.com/canonical/snapd/blob/master/interfaces/builtin/serial_port.go)</br>
-

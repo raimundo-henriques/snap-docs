@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: Reference documentation for BlueZ, which lets a client snap access Bluetooth devices registered by the BlueZ service through a snapd connection.
+---
+
 (interfaces-bluez-interface)=
 #  bluez interface
 
@@ -9,5 +15,4 @@ For example, a game with a _bluez_ plug could connect to the system's _bluez_ sl
 
 
 **Auto-connect**: no
-
 

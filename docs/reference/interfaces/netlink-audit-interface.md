@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: The netlink-audit interface lets a snap use snapd to access the kernel's Linux Audit Subsystem through Netlink for audit event monitoring.
+---
+
 (interfaces-netlink-audit-interface)=
 #  netlink-audit interface
 
@@ -20,4 +26,3 @@ The snap of the [usbtop]() kernel module, used to monitor the bandwidth of USB b
 
 The source code for this interface is in the *snapd* repository:
 <https://github.com/canonical/snapd/blob/master/interfaces/builtin/netlink_audit.go>
-

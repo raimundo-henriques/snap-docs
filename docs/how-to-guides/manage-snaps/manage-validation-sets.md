@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: Create, monitor, enforce, update, and remove validation sets to control the snaps and revisions that a device can install or refresh.
+---
+
 (how-to-guides-manage-snaps-manage-validation-sets)=
 # Manage validation sets
 
@@ -204,4 +210,3 @@ For brief periods during multi-snap updates, different snap revisions, from prev
 As with monitor mode, enforcing can be disabled for select validation sets with the ‘snap validate --forget’ command.
 
 When using `snap install` and `snap refresh`, the `--ignore-validation` flag can be added to bypass validation set enforcement for the snaps affected. Doing so will ignore the validation of the given snap, and for subsequent refresh operations. This may result in the validation set becoming _invalid_ in `snap validate` output. Local snap installation will always bypass validation set enforcement since the purposeful act of installing a specific snap already indicates that a user is acting intentionally.
-

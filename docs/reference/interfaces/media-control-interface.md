@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: Reference documentation for media-control, which lets a snap configure media and Video4Linux devices through snapd using the kernel API.
+---
+
 (interfaces-media-control-interface)=
 #  media-control interface
 
@@ -17,4 +23,3 @@ The kernel media controller API allows connecting and configuring media hardware
 The test code can be found in the snapd repository: https://github.com/canonical/snapd/blob/master/interfaces/builtin/media_control_test.go
 
 The source code for the interface is in the snapd repository: https://github.com/canonical/snapd/blob/master/interfaces/builtin/media_control.go
-

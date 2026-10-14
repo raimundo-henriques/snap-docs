@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: Reference documentation for docker, which lets a snap use snapd to access the Docker socket without granting Docker daemon-level privileges.
+---
+
 (interfaces-docker-interface)=
 #  docker interface
 
@@ -69,4 +75,3 @@ snap run --shell hello-docker
 ```
 
 The Docker command line tool, among other Docker-related executables, can be found within `$SNAP/docker-snap/bin`. Since this is within the `$PATH`, Docker can now be used within your own scripts, or for whatever purpose you may require.
-

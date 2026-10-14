@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: Define a kernel snap for Ubuntu Core with kernel images, modules, firmware, device trees, initrd files, and optional kernel.yaml assets.
+---
+
 (reference-development-yaml-schemas-the-kernel-snap)=
 # The kernel snap
 

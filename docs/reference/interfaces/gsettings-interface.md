@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: Reference documentation for gsettings, which lets a snap access current-user GSettings items through snapd as a transitional desktop interface.
+---
+
 (interfaces-gsettings-interface)=
 #  gsettings interface
 
@@ -5,5 +11,4 @@
 
 * Auto-Connect: yes
 * Transitional: yes
-
 

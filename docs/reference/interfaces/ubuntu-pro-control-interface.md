@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: The ubuntu-pro-control interface lets a snap use snapd to control the Ubuntu Pro desktop daemon and its service entitlements over D-Bus.
+---
+
 (interfaces-ubuntu-pro-control-interface)=
 #  ubuntu-pro-control interface
 

@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: Understand snapd's interface auto-connection policy, including when plugs connect on installation and which requests need store approval.
+---
+
 (explanation-interfaces-interface-auto-connection)=
 # Interface auto-connection
 
@@ -83,4 +89,3 @@ The same language rules can be used to define rules other than interface auto-co
 A content interface plug can specify a default-provider. This is the name of a snap that can be installed to fulfil the plug's need. If there isn’t a slot with the content label of the plug on the system the specified snap will be installed before the snap with the plug. However, if there is a slot on the system that already has the content label, any default-provider specified by a content interface plug is ignored. If the specified snap is already installed but there is no slot with the content label, the specified snap will be upgraded instead under the assumption that a newer version may start providing the label.
 
 The default-provider mechanism triggers the installation or upgrade of the provider snap as described but it does not include an implied connection. The auto-connection will only happen by means of and if it is permitted by the general auto-connection mechanism.
-

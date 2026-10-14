@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: Reference documentation for hugepages-control, which lets a snap manage Linux HugePages through snapd at standard huge-page mount locations.
+---
+
 (interfaces-hugepages-control-interface)=
 #  hugepages-control interface
 
@@ -17,4 +23,3 @@ This interface assumes that _huge pages_ are mounted at either:
 The test code can be found in the snapd repository: https://github.com/canonical/snapd/blob/master/interfaces/builtin/hugepages_control_test.go
 
 The source code for the interface is in the snapd repository: https://github.com/canonical/snapd/blob/master/interfaces/builtin/hugepages_control.go
-

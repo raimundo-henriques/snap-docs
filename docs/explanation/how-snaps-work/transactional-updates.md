@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: Install or refresh interdependent snaps as one transaction, so all changes succeed together or every affected snap reverts to its prior state.
+---
+
 (explanation-how-snaps-work-transactional-updates)=
 # Transactional updates
 
@@ -22,4 +28,3 @@ hello 2.10 from Canonical✓ installed
 ```
 
 Currently, no change, log, or message is output to show if a set of snaps have been installed as a single transaction.
-

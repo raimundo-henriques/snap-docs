@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: Reference documentation for browser-support, which lets a snap access browser APIs through snapd, including restricted browser sandbox support.
+---
+
 (interfaces-browser-support-interface)=
 #  browser-support interface
 
@@ -14,5 +20,4 @@ This interface is intended to be used when using an embedded Chromium Content AP
 For some web applications, such those using Electron, it is often useful to disable the internal sandbox and rely on strict confinement, forcing the snap to use `allow-sandbox: false`. To do this, specify `--no-sandbox` on the command line for your application.
 
 When `--no-sandbox` is used, the snap is confined regardless of the `--allow-sandbox` attribute, which now only controls whether or not the browser's internal sandbox can be used.
-
 

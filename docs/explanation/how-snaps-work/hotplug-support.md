@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: Understand how snapd detects supported USB devices, creates system slots, and restores saved interface connections when devices reconnect.
+---
+
 (interfaces-hotplug-support)=
 # Hotplug support
 
@@ -49,4 +55,3 @@ Along with only supporting USB serial port adapters, hotplug is restricted to de
 These attributes are needed to identify and track devices. This isn’t normally a problem for branded devices, but it may cause issues with unbranded devices. Without the required attributes, a device cannot be supported and will be ignored when connected. 
 
 There is also no easy way to list connected devices and their corresponding slots. This limitation will be addressed in an upcoming snapd release.
-

@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: The spi interface lets a snap use snapd to access a specific Serial Peripheral Interface controller device supplied by a gadget snap slot.
+---
+
 (interfaces-spi-interface)=
 #  spi interface
 
@@ -22,5 +28,4 @@ spi         -        pi:spidev1              -
 Once connected, the consuming snap can use the device via the path specified by the connected slot.
 
 Requires snapd version _2.28+_.
-
 

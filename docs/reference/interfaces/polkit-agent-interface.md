@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: The polkit-agent interface lets a snap use snapd to register as a polkit agent that supports authorisation decisions on Ubuntu Core systems.
+---
+
 (interfaces-polkit-agent-interface)=
 #  polkit-agent interface
 
@@ -20,4 +26,3 @@ See https://forum.snapcraft.io/t/proposal-add-polkit-and-polkit-agent-interfaces
 The test code can be found in the snapd repository: https://github.com/canonical/snapd/blob/master/interfaces/builtin/polkit_agent_test.go
 
 The source code for the interface is in the snapd repository: https://github.com/canonical/snapd/blob/master/interfaces/builtin/polkit_agent.go
-

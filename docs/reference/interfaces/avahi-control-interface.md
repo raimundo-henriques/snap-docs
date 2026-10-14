@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: Reference documentation for avahi-control, which lets a snap control local service discovery through snapd with mDNS and DNS-SD protocols.
+---
+
 (interfaces-avahi-control-interface)=
 #  avahi-control interface
 
@@ -6,5 +12,4 @@
 **Auto-connect**: no
 
 Requires snapd version _2.28+_.
-
 

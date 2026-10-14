@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: The thumbnailer-service interface lets a snap use snapd to provide or interact with the D-Bus service that creates thumbnails from local media.
+---
+
 (interfaces-thumbnailer-service-interface)=
 #  thumbnailer-service interface
 
@@ -6,5 +12,4 @@
 **Auto-connect**: no
 
 Requires snapd version _2.22+_.
-
 

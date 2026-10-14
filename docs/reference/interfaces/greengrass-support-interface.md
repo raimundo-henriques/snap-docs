@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: Reference documentation for greengrass-support, which lets an Amazon Greengrass snap use snapd resources and syscalls to run its services.
+---
+
 (interfaces-greengrass-support-interface)=
 #  greengrass-support interface
 
@@ -7,5 +13,4 @@
 **{ref}`Super-privileged <reference-operations-interfaces-super-privileged-interfaces>`**: yes
 
 Requires snapd version _2.26+_.
-
 

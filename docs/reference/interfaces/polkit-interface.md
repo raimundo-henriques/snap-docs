@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: The polkit interface lets a snap use snapd to make polkit authorisation decisions and install approved custom rules for unprivileged clients.
+---
+
 (interfaces-polkit-interface)=
 #  polkit interface
 
@@ -65,4 +71,3 @@ apps:
 The test code can be found in the snapd repository: https://github.com/canonical/snapd/blob/master/interfaces/builtin/polkit_test.go
 
 The source code for the interface is in the snapd repository: https://github.com/canonical/snapd/blob/master/interfaces/builtin/polkit.go
-
